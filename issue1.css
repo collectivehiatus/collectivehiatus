@@ -1,0 +1,743 @@
+/* FONTS */
+
+@font-face {
+    font-family:'neue-haas-grotesk-text', sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family:'neue-haas-grotesk-text';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+/*    align-items: center;*/
+    transition: 1s;
+
+}
+
+/* HEADER */
+
+.header {
+/*    background-color: cadetblue;*/
+    width: 40%;
+    margin-left: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    z-index: 1;
+    margin-top: 1%;
+    position: fixed;
+    font-weight: 500;
+}
+.header_m {
+/*    background-color: cadetblue;*/
+
+    display: none;
+}
+
+/* RIFE LOGOTIPO */
+
+.rife {
+    width: 28vw;
+    
+    margin-right: 34vw;
+    margin-left: 38vw;
+    position: fixed;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    /*    align-items: center;*/
+}
+
+/* MENÚ SUBTITULO + BOTÃO EDITORIAL + BOTÃO ABOUT */
+
+.subtitle_buttons {
+/*    background-color: pink;*/
+    width: auto;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.subtitle, .buttons {
+    width: auto;
+/*    background-color: aquamarine;*/
+}
+
+.subtitle {
+    font-size: 3.5vh;
+    margin-bottom: 2%;
+    margin-right: 1vw;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    float: right;
+    font-size: 2.5vh;
+    
+}
+
+#editorial_button, #editorial_button_2, #about_button, #about_button_2, #close_button {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+#editorial_button, #about_button{
+    display: flex;
+}
+#editorial_button_2, #about_button_2, #close_button{
+    display: none;
+}
+
+#editorial_button:hover, #editorial_button_2:hover, #about_button:hover, #about_button_2:hover, #close_button:hover {
+  text-shadow:0px 0px 10px #000000;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.blue_bar{
+        background-color: #3e4a9a;
+        height: 0vh;
+        width: 0vw;
+        position: fixed;
+        margin-top: 92vh;
+    }
+
+
+/* CONTENT */
+
+.content {
+    background-color: #c1c1c1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 0;
+}
+
+/* LEFT SIDE */
+
+#left_side {
+    width: 60vw;
+    height: 100vh;
+    background-image:url(images/issues/innermostissue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    overflow: hidden;
+    
+    
+    
+}
+#left_side_content{
+    background-color: rgba(200, 200, 200, 0);
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    opacity: 100%;
+    overflow: scroll;
+    
+}
+
+#menu_issues {
+/*    background-color: #e2952b;*/
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 1vw;
+    font-size: 2.5vh;
+    text-decoration: none;
+    position: fixed;
+    
+}
+
+
+#menu_back {
+/*    background-color: #e2952b;*/
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 2.5vh;
+    text-decoration: none;
+    position: fixed;
+    
+    
+}
+a.back:hover{
+    color: #3e4a9a;
+    text-decoration: none;
+	-webkit-stroke-width: 3.75vmax;
+      -webkit-stroke-color: #3e4a9a;
+      -webkit-fill-color: #3e4a9a;
+      text-shadow: 0px 0px 20px #3e4a9a;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    
+}
+
+.menu_posts {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32vh;
+}
+
+
+a.issue_1, a.issue_2, a.issue_3, a.issue_4, a.issue_5, a.back {
+    text-decoration: none;
+    margin-right: 0.75%;
+    color: black;
+}
+
+.issue_1:hover, a.issue_3:hover, a.issue_4:hover, a.issue_5:hover {
+    color: #3e4a9a;
+    text-decoration: none;
+	-webkit-stroke-width: 3.75vmax;
+      -webkit-stroke-color: #3e4a9a;
+      -webkit-fill-color: #3e4a9a;
+      text-shadow: 0px 0px 20px #3e4a9a;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+a.issue_2{
+    text-decoration: line-through;
+    cursor: default;
+}
+
+
+
+#post_1, #post_2, #post_3, #post_4, #post_5 {
+/*    background-color: aquamarine;*/
+    width: 96%;
+    height: auto;
+    font-family: 'Cinzel', serif;
+    font-size: 5vh;
+    text-decoration: none;
+    color: black;
+    margin-left: 1.2vw;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    display: block;
+    align-items: flex-start;
+    
+}
+#post_5{
+    margin-bottom: 10vh;
+}
+
+
+.title_date_1, .title_date_2, .title_date_3, .title_date_4, .title_date_5{
+/*    background-color: brown;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+       
+}
+#post_1_link, #post_2_link, #post_3_link, #post_4_link, #post_5_link {
+/*    background-color: #987fff;*/
+    width: 80%;
+    line-height: 105%;
+    cursor: pointer;
+       
+}
+a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, a#post_5_link_date{
+/*    background-color: antiquewhite;*/
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+    font-size: 3vh;
+    font-family:'neue-haas-grotesk-text';
+    cursor: pointer;
+    text-align: right;
+}
+#post_1_link_date, #post_2_link_date, #post_3_link_date, #post_4_link_date, #post_5_link_date{
+    width: 17%;
+    margin-bottom: 0.6%;
+    display: block;
+    
+       
+}
+
+.title_date_1:hover a#post_1_link, .title_date_1:hover a#post_1_link_date, .title_date_2:hover a#post_2_link, .title_date_2:hover a#post_2_link_date, .title_date_3:hover a#post_3_link, .title_date_3:hover a#post_3_link_date, .title_date_4:hover a#post_4_link, .title_date_4:hover a#post_4_link_date, .title_date_5:hover a#post_5_link, .title_date_5:hover a#post_5_link_date {
+    color: #3e4a9a;
+    text-decoration: none;
+	-webkit-stroke-width: 3.75vmax;
+      -webkit-stroke-color: #3e4a9a;
+      -webkit-fill-color: #3e4a9a;
+      text-shadow: 0px 0px 20px #3e4a9a;
+}
+
+
+
+
+
+#post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content {
+    display: none;
+    width: 60%;
+    font-family:'neue-haas-grotesk-text';
+    font-size: 2.5vh;
+    
+    
+}
+.post_1_subtitle, .post_2_subtitle, .post_3_subtitle, .post_4_subtitle, .post_5_subtitle{
+    font-family: 'Cinzel', serif;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.container_images{
+    
+    width: 98vw;
+/*    background-color: aqua;*/
+    
+    
+    
+    
+}
+.images_group{
+    background-color: #ffff00;
+    
+    
+    
+}
+.img_text{
+    width: 59%;
+}
+.img_post_1{
+    width: 100%;
+}
+.img_post_b{
+    display: flex;
+    flex-direction: row;
+/*    background-color: aquamarine;*/
+    width: 100%;
+    height: auto;
+}
+.img_post_2{
+    width: 35%;
+    float: right;   
+}
+.img_post_3{
+    
+    width: 36%;
+    float: right;
+    margin-right: 0%;
+    
+}
+.img_post_4{
+    
+    width: 32%;
+    float: right;
+    margin-right: 1%;
+    
+}
+
+
+.notes{
+    margin-top: 10vh;
+    font-size: 1.9vh;
+}
+
+/* RIGHT SIDE */
+
+#right_side {
+    background-color: #3e4a9a;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    transition: 1s;
+    position: absolute;
+    margin-left: 60%;
+}
+
+#editorial { 
+/*    background-color: royalblue;*/
+    width: 93%;
+    height: auto;
+    margin-top: 32vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5vh;
+    display: block;
+}
+
+#about {
+/*    background-color: royalblue;*/
+    width: 93%;
+    height: auto;
+    margin-top: 32vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5vh;
+    display: none;
+}
+
+.email{
+    text-decoration: none;
+    color: black
+}
+
+/* FOOTER */
+
+.hiatus {
+    width:6%;
+    height: auto;
+    z-index: 2;
+    
+    right: 1%;
+    bottom: 2%;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1023px)   {
+    /* HEADER */
+    .header_m {
+/*    background-color: cadetblue;*/
+    width: 100%;
+    margin-left: 0%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    margin-top: 1%;
+    position: fixed;
+    font-weight: 500;
+}
+    .header{
+        display: none;
+    }
+    /* RIFE LOGOTIPO */
+    .rife {
+    width: 80vw;
+    
+    margin-right: 7vw;
+    margin-left: 13vw;
+        margin-top: 3vh;
+    position: fixed;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    /*    align-items: center;*/
+}
+    
+    /* MENÚ SUBTITULO + BOTÃO EDITORIAL + BOTÃO ABOUT */
+    .subtitle_buttons_m {
+/*    background-color: pink;*/
+    width: 93%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.subtitle_m, .buttons_m {
+    width: auto;
+/*    background-color: aquamarine;*/
+}
+
+.subtitle_m {
+/*    background-color: aquamarine;*/
+    width: 100%;
+    height: 6.5vh;
+    font-size: 3.5vh;
+    margin-bottom: 0%;
+    margin-top: 1.5vh;
+}
+
+.buttons_m {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    float: right;
+    font-size: 2.7vh;
+    
+}
+
+.editorial_button_m, .about_button_ {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 5vw;
+}
+
+.editorial_button_m:hover, .about_button_m:hover {
+  text-shadow:0px 0px 10px #000000;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+    .blue_bar{
+        background-color: #3e4a9a;
+        height: 9vh;
+        width: 100vw;
+        position: fixed;
+        margin-top: 92vh;
+    }
+    /* CONTENT */
+    .content {
+    background-color: #c1c1c1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+}
+    /* LEFT SIDE */
+    #left_side {
+    width: 100vw;
+    height: 100vh;
+    background-image:url(images/issues/innermostissue.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    }
+    
+    #menu_issues {
+/*    background-color: #e2952b;*/
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 47%;
+    margin-left: 15%;
+    font-size: 2.5vh;
+    text-decoration: none;
+    position: fixed;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+    
+}
+    #menu_back {
+/*    background-color: #e2952b;*/
+    width: 40%;
+    display: none;
+    flex-direction: row;
+    margin-top: 47%;
+    margin-left: 30%;
+        margin-right: 30%;
+    font-size: 2.5vh;
+    text-decoration: none;
+    position: fixed;
+    text-align: center;
+    
+}
+    a.issue_1, a.issue_2, a.issue_3, a.issue_4, a.issue_5, a.back {
+    text-decoration: none;
+    margin-right: 5%;
+    color: black;
+}
+    a.issue_2{
+        text-decoration: line-through;
+        margin-right: 0%;
+    }
+    #post_1, #post_2, #post_3, #post_4, #post_5 {
+/*    background-color: aquamarine;*/
+    width: 96%;
+    height: auto;
+    font-family: 'Cinzel', serif;
+    font-size: 5vh;
+    text-decoration: none;
+    color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    display: block;
+    align-items: flex-start;
+    
+}
+#post_5{
+    margin-bottom: 10vh;
+}
+    .title_date_1, .title_date_2, .title_date_3, .title_date_4, .title_date_5{
+/*    background-color: brown;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+       
+}
+#post_1_link, #post_2_link, #post_3_link, #post_4_link, #post_5_link {
+/*    background-color: #987fff;*/
+    width: 80%;
+    line-height: 105%;
+    cursor: pointer;
+    font-size: 8.5vw;
+       
+}
+a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, a#post_5_link_date{
+/*    background-color: antiquewhite;*/
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+    font-size: 2.5vh;
+    font-family:'neue-haas-grotesk-text';
+    cursor: pointer;
+    text-align: right;
+}
+#post_1_link_date, #post_2_link_date, #post_3_link_date, #post_4_link_date, #post_5_link_date{
+    width: 17%;
+    margin-bottom: 0.6%;
+    display: block;
+    
+       
+}
+
+.title_date_1:hover a#post_1_link, .title_date_1:hover a#post_1_link_date, .title_date_2:hover a#post_2_link, .title_date_2:hover a#post_2_link_date, .title_date_3:hover a#post_3_link, .title_date_3:hover a#post_3_link_date, .title_date_4:hover a#post_4_link, .title_date_4:hover a#post_4_link_date, .title_date_5:hover a#post_5_link, .title_date_5:hover a#post_5_link_date {
+    color: black;
+    text-decoration: none;
+	-webkit-stroke-width: 0vmax;
+      -webkit-stroke-color: black;
+      -webkit-fill-color: black;
+      text-shadow: 0px 0px 0px black;
+}
+    #post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content {
+    display: none;
+    width: 100%;
+    font-family:'neue-haas-grotesk-text';
+    font-size: 2vh;
+    margin-top: 5%;
+        margin-bottom: 7vh;
+/*        background-color: beige;*/
+    
+}
+    .post_1_subtitle, .post_2_subtitle, .post_3_subtitle, .post_4_subtitle, .post_5_subtitle{
+    font-family: 'Cinzel', serif;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+.container_images{
+    width: 100%;
+/*    background-color: aqua;*/
+    
+}
+.img_text{
+    width: 100%;
+}
+.img_post_1{
+    width: 100%;
+}
+.img_post_2{
+    width: 100%;
+    float: none;
+    
+    
+}
+    .img_post_3{
+    
+    width: 100%;
+    float: none;
+    margin-right: 0%;
+    
+}
+
+    .notes{
+    margin-top: 7vh;
+    font-size: 01.5vh;
+}
+
+    /* RIGHT SIDE */
+    #right_side {
+    
+    background-color: #3e4a9a;
+    width: 100vw;
+    height: 0vh;
+        margin-top: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    transition: 0.5s;
+    position: absolute;
+        margin-left: 0%;
+    
+    }
+    #editorial { 
+/*    background-color: royalblue;*/
+    width: 93%;
+    height: auto;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    display: block;
+}
+
+#about {
+/*    background-color: royalblue;*/
+    width: 93%;
+    height: auto;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    display: none;
+}
+    /* FOOTER */
+    .hiatus {
+    width:auto;
+        display: none;
+    height: 8vh;
+    z-index: 2;
+    right: 2%;
+    bottom: 1%;
+    position: fixed;
+}
+}
+
+
+
+
+
