@@ -12,6 +12,7 @@ body {
     flex-direction: column;
 /*    align-items: center;*/
     transition: 1s;
+	overflow: hidden;
 
 }
 
