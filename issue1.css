@@ -514,9 +514,9 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
         background-color: #3e4a9a;
         height: 9vh;
         width: 100vw;
-        position: absolute;
-        bottom: 0;
-	left: 0;
+        position: fixed;
+        margin-bottom: 0;
+	margin-left: 0;
     }
     /* CONTENT */
     .content {
