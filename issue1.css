@@ -130,14 +130,15 @@ body {
 /* LEFT SIDE */
 
 #left_side {
+    position: fixed;
     width: 60vw;
     height: 100vh;
     background-image:url(images/issues/innermostissue.png);
+    background-attatchement: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transition: 1s;
-    overflow: hidden;
     
     
     
