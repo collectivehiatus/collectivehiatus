@@ -17,7 +17,7 @@
 
 body {
     background-color: rgba(200, 200, 200);
-    font-family:'neue-haas-grotesk-text';
+    font-family:'NHaasGrotesk-Roman';
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -795,7 +795,7 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     #post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content {
     display: none;
     width: 100%;
-    font-family:'neue-haas-grotesk-text';
+    font-family:'NHaasGrotesk-Roman';
     font-size: 2vh;
     margin-top: 5%;
 /*        background-color: beige;*/
