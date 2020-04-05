@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'NHaasGrotesk-Medium';
+    src: url('fonts/NHaas-Grotesk-Text-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
    font-family: 'Cinzel';
     src: url('fonts/Cinzel-Regular.woff') format('woff');
@@ -49,10 +55,11 @@ body {
     margin-top: 1%;
     position: fixed;
     font-weight: 500;
+    font-family:'NHaasGrotesk-Medium';
 }
 .header_m {
 /*    background-color: cadetblue;*/
-
+    font-family: 'NHaasGrotesk-Medium';
     display: none;
 }
 
@@ -168,6 +175,7 @@ body {
     background-size: cover;
     position: fixed;
     opacity: 100%;
+    transition: 1s;
 }
 #left_side {
     display: flex;
@@ -220,6 +228,8 @@ body {
     font-size: 2.5vh;
     text-decoration: none;
     position: fixed;
+    font-family: 'NHaasGrotesk-Medium';
+    font-weight: 500;
     
 }
 
@@ -234,6 +244,9 @@ body {
     font-size: 2.5vh;
     text-decoration: none;
     position: fixed;
+    font-family: 'NHaasGrotesk-Medium';
+    font-weight: 500;
+    
     
     
 }
@@ -360,7 +373,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
 #post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content {
     display: none;
     width: 60%;
-    font-family:'neue-haas-grotesk-text';
+    font-family: 'NHaasGrotesk-Roman';
+    font-weight: 400;
     font-size: 2.5vh;
     
     
@@ -429,6 +443,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
 .notes{
     margin-top: 10vh;
     font-size: 1.9vh;
+    font-family: 'NHaasGrotesk-Roman';
+    font-weight: 400;
 }
 
 /* RIGHT SIDE */
@@ -465,6 +481,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     margin-top: 32vh;
     display: flex;
     flex-direction: column;
+    font-family: 'NHaasGrotesk-Roman';
+    font-weight: 400;
     font-size: 2.5vh;
     display: block;
     -ms-overflow-style: none;
@@ -479,6 +497,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     margin-top: 32vh;
     display: flex;
     flex-direction: column;
+    font-family: 'NHaasGrotesk-Roman';
+    font-weight: 400;
     font-size: 2.5vh;
     display: none;
     -ms-overflow-style: none;
@@ -488,6 +508,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
 }
 .email{
     text-decoration: none;
+    font-family: 'NHaasGrotesk-Medium';
+    font-weight: 500;
     color: black
 }
 .email:hover{
@@ -534,7 +556,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     align-items: center;
     z-index: 1;
     margin-top: 1%;
-    position: fixed;
+    position: fixed;font-family: 'NHaasGrotesk-Medium';
+    
     font-weight: 500;
 }
     .header{
@@ -615,7 +638,9 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
         padding-left: 
             3.5%;
         padding-top: 1vh;
-        font-weight: 500;
+        font-family: 'NHaasGrotesk-Medium';
+    font-weight: 500;
+        
     }
     
     /* CONTENT */
@@ -664,7 +689,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     position: fixed;
         align-items: center;
         justify-content: center;
-        font-weight: 500;
+        font-family: 'NHaasGrotesk-Medium';
+    font-weight: 500;
     
 }
     #menu_back {
@@ -679,6 +705,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     text-decoration: none;
     position: fixed;
     text-align: center;
+        font-family: 'NHaasGrotesk-Medium';
+    font-weight: 500;
     
 }
     a.issue_1, a.issue_2, a.issue_3, a.issue_4, a.issue_5, a.back {
@@ -795,7 +823,8 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     #post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content {
     display: none;
     width: 100%;
-    font-family:'NHaasGrotesk-Roman';
+    font-family: 'NHaasGrotesk-Roman';
+    font-weight: 400;
     font-size: 2vh;
     margin-top: 5%;
 /*        background-color: beige;*/

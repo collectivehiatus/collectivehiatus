@@ -70,6 +70,7 @@ $('.back').click(
                     $('#right_side').css('marginLeft', '60%')
                     $('#right_side').css('width', '40vw')
                     $('#left_side').css('width', '60%')
+                    $('#background').css('width', '60%')
                     
                     $('#post_1_content').css('display', 'none')
                     $('#post_2_content').css('display', 'none')
@@ -120,6 +121,7 @@ $('.back').click(
                             $('#post_1_link').css('-cursor', 'pointer');
                         });
                     });
+                    
                     $(function() {
                         $('.title_date_2').hover(function() {
                             $('#post_2_link').css('color', '#3e4a9a');
@@ -138,6 +140,7 @@ $('.back').click(
                             $('#post_2_link').css('-cursor', 'pointer');
                         });
                     }); 
+                    
                     $(function() {
                         $('.title_date_3').hover(function() {
                             $('#post_3_link').css('color', '#3e4a9a');
@@ -156,6 +159,7 @@ $('.back').click(
                             $('#post_3_link').css('-cursor', 'pointer');
                         });
                     });
+                    
                     $(function() {
                         $('.title_date_4').hover(function() {
                             $('#post_4_link').css('color', '#3e4a9a');
@@ -174,6 +178,7 @@ $('.back').click(
                             $('#post_4_link').css('-cursor', 'pointer');
                         });
                     });
+                    
                     $(function() {
                         $('.title_date_5').hover(function() {
                             $('#post_5_link').css('color', '#3e4a9a');
@@ -199,7 +204,7 @@ $('.back').click(
 
 /* para abrir o primeiro post */
     
-$('.title_date_1').click(
+$('#post_1').click(
                 function(){
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
@@ -240,7 +245,7 @@ $('.title_date_1').click(
  );
 
     /* para abrir o segundo post */
-    $('.title_date_2').click(
+    $('#post_2').click(
                 function(){
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
@@ -281,7 +286,7 @@ $('.title_date_1').click(
  );
 
     /* para abrir o terceiro post */
-    $('.title_date_3').click(
+    $('#post_3').click(
                 function(){
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
@@ -321,7 +326,7 @@ $('.title_date_1').click(
                 },             
  );
     /* para abrir o quarto post */
-    $('.title_date_4').click(
+    $('#post_4').click(
                 function(){
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
@@ -361,7 +366,7 @@ $('.title_date_1').click(
                 },             
  );
     /* para abrir o quinto post */
-    $('.title_date_5').click(
+    $('#post_5').click(
                 function(){
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
