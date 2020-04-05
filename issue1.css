@@ -8,6 +8,7 @@
     src: url('fonts/NHaasGrotesk-Roman.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    
 }
 @font-face{
     font-family: 'NHaasGrotesk-Medium';
@@ -374,6 +375,7 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     display: none;
     width: 60%;
     font-family: 'NHaasGrotesk-Roman';
+    letter-spacing: 0.05em;
     font-weight: 400;
     font-size: 2.5vh;
     
@@ -415,16 +417,16 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
 }
 /*sofia*/
 .img_post_2{
-    width: 53vh;
+    width: 42vh;
     float: right;
     margin-right: 5%;
 }
 /*bea*/
 .img_post_3{
     
-    width: 59vh;
+    width: 45vh;
     float: right;
-    margin-right: 0%;
+    margin-right: 5%;
     
 }
 .img_post_4{
@@ -443,6 +445,7 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
 .notes{
     margin-top: 10vh;
     font-size: 1.9vh;
+    letter-spacing: 0.05em;
     font-family: 'NHaasGrotesk-Roman';
     font-weight: 400;
 }
@@ -482,6 +485,7 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     display: flex;
     flex-direction: column;
     font-family: 'NHaasGrotesk-Roman';
+    letter-spacing: 0.05em;
     font-weight: 400;
     font-size: 2.5vh;
     display: block;
@@ -499,6 +503,7 @@ a#post_1_link_date, a#post_2_link_date, a#post_3_link_date, a#post_4_link_date, 
     flex-direction: column;
     font-family: 'NHaasGrotesk-Roman';
     font-weight: 400;
+    letter-spacing: 0.05em;
     font-size: 2.5vh;
     display: none;
     -ms-overflow-style: none;

@@ -65,7 +65,7 @@ $('#close_button').click(
 
 /* para voltar a home page */
     
-$('.back').click(
+$('.back, .rife').click(
                 function(){
                     $('#right_side').css('marginLeft', '60%')
                     $('#right_side').css('width', '40vw')
