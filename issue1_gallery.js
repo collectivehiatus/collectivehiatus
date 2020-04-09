@@ -1,6 +1,6 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|SafariMobile|Opera Mini/i.test(navigator.userAgent) ) {
  // no pc, no gallery
-}else{
+}else{if ($(window).width() >= 1400) {
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     if (key === "Escape") {
@@ -364,4 +364,4 @@ function closeGallery() {
     r5=0;
 }
 
-}
+}}
