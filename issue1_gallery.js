@@ -1,6 +1,3 @@
-var mq = window.matchMedia( "(min-width: 1024px)" );
-if (mq.matches) {
-
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     if (key === "Escape") {
@@ -362,6 +359,4 @@ function closeGallery() {
     r3=0;
     r4=0;
     r5=0;
-}
-
 }
