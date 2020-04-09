@@ -1,6 +1,11 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|SafariMobile|Opera Mini/i.test(navigator.userAgent) ) {
  // no pc, no gallery
-}else{if ($(window).width() >= 1400) {
+}else{@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    document.getElementById('gallery_background').style.cssText = 'display: none';
+  }
+}
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     if (key === "Escape") {
@@ -364,4 +369,4 @@ function closeGallery() {
     r5=0;
 }
 
-}}
+}
