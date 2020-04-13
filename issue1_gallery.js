@@ -146,7 +146,7 @@ function change2_b() {
 
 // POST 3 //
 
-/*var arr_capt3 = ["1. Earthy tones and soft brush strokes create<br>an everyday towel that sits restfully <br>on a bentwood chair Tony Belobrajdic<br>2. Window - “Looking Out a Dirty Old Window” <br>Version 2 (2018) Colley Whisson",
+var arr_capt3 = ["1. Earthy tones and soft brush strokes create<br>an everyday towel that sits restfully <br>on a bentwood chair Tony Belobrajdic<br>2. Window - “Looking Out a Dirty Old Window” <br>Version 2 (2018) Colley Whisson",
 "1. Bed - “Assemblage” (2010) Derek Buckner<br>2. Jam jar - No title (2017) Francis Livingston"];
 var l3 = arr_capt3.length;
 
@@ -209,7 +209,7 @@ function change3_b() {
     	document.getElementById('left').style.cssText = 'display: none';
 	}
 	return r3=i;
-}*/
+}
 
 
 
