@@ -477,7 +477,7 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
 }
 
 #hiatus, #hiatus_1{
-    opacity: 0.9;
+    opacity: 0.99;
 }
 
 #hiatus:hover {
