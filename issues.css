@@ -458,7 +458,7 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
 /* FOOTER */
 
 .hiatus{
-    width: 100%;
+    width: 6vw;
     height: auto;
     z-index: 2;
     right: 1vh;
