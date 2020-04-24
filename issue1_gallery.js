@@ -1,4 +1,4 @@
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|SafariMobile|Opera Mini/i.test(navigator.userAgent) ) {
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  // no pc, no gallery
 }else{
 document.addEventListener('keydown', function(event) {
@@ -103,7 +103,7 @@ function openGallery_2() {
     	document.getElementById('left').style.cssText = 'display: block';
     } else {
     	document.getElementById('left').style.cssText = 'display: block';
-    	document.getElementById('left').style.cssText = 'display: block';
+    	document.getElementById('right').style.cssText = 'display: block';
     }
     return r2=i;																			//
 }
@@ -146,7 +146,7 @@ function change2_b() {
 
 // POST 3 //
 
-var arr_capt3 = ["1. Earthy tones and soft brush strokes create<br>an everyday towel that sits restfully <br>on a bentwood chair Tony Belobrajdic<br>2. Window - “Looking Out a Dirty Old Window” <br>Version 2 (2018) Colley Whisson",
+/*var arr_capt3 = ["1. Earthy tones and soft brush strokes create<br>an everyday towel that sits restfully <br>on a bentwood chair Tony Belobrajdic<br>2. Window - “Looking Out a Dirty Old Window” <br>Version 2 (2018) Colley Whisson",
 "1. Bed - “Assemblage” (2010) Derek Buckner<br>2. Jam jar - No title (2017) Francis Livingston"];
 var l3 = arr_capt3.length;
 
@@ -211,11 +211,11 @@ function change3_b() {
 	return r3=i;
 }
 
-
+*/
 
 // POST 4 //
 
-var arr_capt4 = ["Untitled.", "Untitled.", "Untitled.", "Untitled.", "Untitled.", "Untitled.", "Untitled."];
+var arr_capt4 = ["", "", "", "", "", "", ""];
 var l4 = arr_capt4.length;
 
 document.getElementById("img4.1").addEventListener("click", function(){openGallery_4(1);});
@@ -235,6 +235,7 @@ function openGallery_4() {
 	document.getElementById('gallery_background').style.cssText = 'display: block';
     document.getElementById('body').style.cssText = 'overflow: hidden';
     document.getElementById('pic').style.cssText = 'transform: translate(-50%, -50%)';
+    document.getElementById('backg').style.cssText = 'width: 80%';
     if (i==1) {
     	document.getElementById('left').style.cssText = 'display: none';
     	document.getElementById('right').style.cssText = 'display: block';
@@ -243,7 +244,7 @@ function openGallery_4() {
     	document.getElementById('left').style.cssText = 'display: block';
     } else {
     	document.getElementById('left').style.cssText = 'display: block';
-    	document.getElementById('left').style.cssText = 'display: block';
+    	document.getElementById('right').style.cssText = 'display: block';
     }
     return r4=i;																			//
 }
@@ -287,7 +288,7 @@ function change4_b() {
 
 // POST 5 //
 
-var arr_capt5 = ["Untitled.", "Untitled.", "Untitled."];
+var arr_capt5 = ["", "", ""];
 var l5 = arr_capt5.length;
 
 document.getElementById("img5.1").addEventListener("click", function(){openGallery_5(1);});
@@ -312,7 +313,7 @@ function openGallery_5() {
     	document.getElementById('left').style.cssText = 'display: block';
     } else {
     	document.getElementById('left').style.cssText = 'display: block';
-    	document.getElementById('left').style.cssText = 'display: block';
+    	document.getElementById('right').style.cssText = 'display: block';
     }
     return r5=i;																			//
 }
@@ -363,5 +364,4 @@ function closeGallery() {
     r4=0;
     r5=0;
 }
-
 }

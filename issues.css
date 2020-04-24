@@ -324,6 +324,11 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
     width: 98vw;      
 }
 
+.container_images_vimeo{
+    width: 98vw;
+    margin-left: -14vw;      
+}
+
 .images_group{
     background-color: #ffff00;  
 }
@@ -333,8 +338,9 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
 
 .img_text_2{
     font-size: 0.8em;
-    width: 38%;
+    width: 39%;
     float: right;
+    top:0;
     right: 0;
     position: relative;
 }
@@ -349,13 +355,19 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
 
 .img_post_1{
     cursor: url("zoom.png"), pointer;
-    width: 100%;
+    width: 98%;
 }
 
 /*sofia*/
 .img_post_2{
     cursor: url("zoom.png"), pointer;
     width: 58%;
+}
+
+.img_post_2_center {
+    cursor: url("zoom.png"), pointer;
+    width: 58%;
+    margin-left: 20%;
 }
 
 /*bea*/
@@ -377,6 +389,21 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
     cursor: url("zoom.png"), pointer;
     width: 6%;
     float: left;
+}
+
+a.hyperlinks {
+    color: black;
+    text-decoration: underline;
+}
+
+a.hyperlinks:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a.hyperlinks:hover {
+    color: black;
+    text-decoration: none;
 }
 
 /* RIGHT SIDE */
@@ -967,6 +994,12 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
 .container_images{
     width: 100%;   
 }
+
+.container_images_vimeo{
+    width: 98vw;
+    margin-left: -14vw;      
+}
+
 .img_text{
     width: 100%;
 }
@@ -981,16 +1014,16 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
     position: relative;
 }
 
-.notes{
+/*.notes{
     font-size: 1.9vh;
     font-family: 'NHaasGrotesk-Roman';
-    line-height: 0em;
     position: relative;
-}
+}*/
 
-.img_post_2{
+.img_post_2, .img_post_2_center{
     cursor: url("zoom.png"), pointer;
     width: 100%;
+    margin-left: 0;
 }
     .img_post_3{
     width: 100%;
@@ -1017,6 +1050,18 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
     margin-top: 7vh;
     font-size: 01.5vh;
 }
+
+a.hyperlinks {
+    color: black;
+    text-decoration: underline;
+}
+
+a.hyperlinks:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+
 
     /* RIGHT SIDE */
     #right_side {
