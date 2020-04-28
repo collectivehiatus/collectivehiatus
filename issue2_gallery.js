@@ -133,7 +133,7 @@ document.getElementById("img7.6").addEventListener("click", function(){openGalle
 
 function openGallery_2() {
 	i = arguments[0];
-	document.images["pic"].src = "images/posts/IMG7_".concat(i.toString()).concat(".png"); 	//
+	document.images["pic"].src = "images/posts/IMG7_".concat(i.toString()).concat(".jpg"); 	//
     document.images["pic"].alt = "IMG7_".concat(i.toString()); 								//
     document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l2); 		//
     document.getElementById("captions").innerHTML = arr_capt2[i-1];							//
@@ -161,7 +161,7 @@ function change2() {
 			document.getElementById('left').style.cssText = 'display: block';
 		}
 		i++;
-		document.images["pic"].src = "images/posts/IMG7_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG7_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG7_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l2);		//
     	document.getElementById("captions").innerHTML = arr_capt2[i-1];							//
@@ -179,7 +179,7 @@ function change2_b() {
 			document.getElementById('right').style.cssText = 'display: block';
 		}
 		i--;
-		document.images["pic"].src = "images/posts/IMG7_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG7_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG7_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l2);		//
     	document.getElementById("captions").innerHTML = arr_capt2[i-1];							//
@@ -231,7 +231,7 @@ document.getElementById("img10.6").addEventListener("click", function(){openGall
 
 function openGallery_5() {
 	i = arguments[0];
-	document.images["pic"].src = "images/posts/IMG10_".concat(i.toString()).concat(".png"); 	//
+	document.images["pic"].src = "images/posts/IMG10_".concat(i.toString()).concat(".jpg"); 	//
     document.images["pic"].alt = "IMG10_".concat(i.toString()); 								//
     document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l5); 		//
     document.getElementById("captions").innerHTML = arr_capt5[i-1];							//
@@ -259,7 +259,7 @@ function change5() {
 			document.getElementById('left').style.cssText = 'display: block';
 		}
 		i++;
-		document.images["pic"].src = "images/posts/IMG10_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG10_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG10_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l5);		//
     	document.getElementById("captions").innerHTML = arr_capt5[i-1];							//
@@ -277,7 +277,7 @@ function change5_b() {
 			document.getElementById('right').style.cssText = 'display: block';
 		}
 		i--;
-		document.images["pic"].src = "images/posts/IMG10_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG10_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG10_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l5);		//
     	document.getElementById("captions").innerHTML = arr_capt5[i-1];							//

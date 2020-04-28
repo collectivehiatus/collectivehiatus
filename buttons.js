@@ -82,7 +82,7 @@ $('#close_button').click(
 
 /* para voltar a home page */
     
-$('.back, .rife').click(
+$('.back').click(
                 function(){
                     $('#right_side').css('marginLeft', '60%')
                     $('#right_side').css('width', '40vw')
@@ -569,7 +569,7 @@ $('#blue_bar').click(
                 function(){
                     $('#right_side').css({height:'100vh'});
                     $('#right_side').css({marginTop:'0vh'});
-                    $('.hiatus').css({display:'flex'});
+                    $('.hiatus').css({display:'block'});
                 },             
  );
 $('#close_bar').click(

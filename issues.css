@@ -61,7 +61,7 @@ body {
 /* RIFE LOGOTIPO */
 
 .rife {
-    cursor: pointer;
+    cursor: default;
     width: 28vw;
     margin-right: 34vw;
     margin-left: 38vw;
@@ -71,7 +71,7 @@ body {
 }
 
 .rife2 {
-    cursor: pointer;
+    cursor: default;
     width: 40vw;
     margin-right: 30vw;
     margin-left: 30vw;
@@ -162,7 +162,7 @@ body {
     width: 60%;
     height: 100vh;
     display: block;
-    background-image:url(images/issues/innermostissue.png);
+    background-image:url(images/issues/innermostissue.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -663,6 +663,7 @@ p.numbers {
 #about_text {
     display: block;
     position: absolute;
+    line-height: 1.7em;
     float: left;
     top: 3vh;
     left: 0vh;

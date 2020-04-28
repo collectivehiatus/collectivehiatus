@@ -87,14 +87,14 @@ document.getElementById("img2.6").addEventListener("click", function(){openGalle
 
 function openGallery_2() {
 	i = arguments[0];
-	document.images["pic"].src = "images/posts/IMG2_".concat(i.toString()).concat(".png"); 	//
+	document.images["pic"].src = "images/posts/IMG2_".concat(i.toString()).concat(".jpg"); 	//
     document.images["pic"].alt = "IMG2_".concat(i.toString()); 								//
     document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l2); 		//
     document.getElementById("captions").innerHTML = arr_capt2[i-1];							//
 	document.getElementById('gallery_background').style.cssText = 'display: block';
     document.getElementById('body').style.cssText = 'overflow: hidden';
     document.getElementById('pic').style.cssText = 'transform: translate(-50%, -50%)';
-    document.getElementById('backg').style.cssText = 'width: 60%';
+    document.getElementById('backg').style.cssText = 'width: 58%';
     if (i==1) {
     	document.getElementById('left').style.cssText = 'display: none';
     	document.getElementById('right').style.cssText = 'display: block';
@@ -115,7 +115,7 @@ function change2() {
 			document.getElementById('left').style.cssText = 'display: block';
 		}
 		i++;
-		document.images["pic"].src = "images/posts/IMG2_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG2_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG2_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l2);		//
     	document.getElementById("captions").innerHTML = arr_capt2[i-1];							//
@@ -133,7 +133,7 @@ function change2_b() {
 			document.getElementById('right').style.cssText = 'display: block';
 		}
 		i--;
-		document.images["pic"].src = "images/posts/IMG2_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG2_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG2_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l2);		//
     	document.getElementById("captions").innerHTML = arr_capt2[i-1];							//
@@ -228,7 +228,7 @@ document.getElementById("img4.7").addEventListener("click", function(){openGalle
 
 function openGallery_4() {
 	i = arguments[0];
-	document.images["pic"].src = "images/posts/IMG4_".concat(i.toString()).concat(".png"); 	//
+	document.images["pic"].src = "images/posts/IMG4_".concat(i.toString()).concat(".jpg"); 	//
     document.images["pic"].alt = "IMG4_".concat(i.toString()); 								//
     document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l4); 		//
     document.getElementById("captions").innerHTML = arr_capt4[i-1];							//
@@ -256,7 +256,7 @@ function change4() {
 			document.getElementById('left').style.cssText = 'display: block';
 		}
 		i++;
-		document.images["pic"].src = "images/posts/IMG4_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG4_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG4_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l4);		//
     	document.getElementById("captions").innerHTML = arr_capt4[i-1];							//
@@ -274,7 +274,7 @@ function change4_b() {
 			document.getElementById('right').style.cssText = 'display: block';
 		}
 		i--;
-		document.images["pic"].src = "images/posts/IMG4_".concat(i.toString()).concat(".png");	//
+		document.images["pic"].src = "images/posts/IMG4_".concat(i.toString()).concat(".jpg");	//
     	document.images["pic"].alt = "IMG4_".concat(i.toString());								//
     	document.getElementById("srcnr").innerHTML = i.toString().concat("/").concat(l4);		//
     	document.getElementById("captions").innerHTML = arr_capt4[i-1];							//
