@@ -837,8 +837,8 @@ div#arrow {
 
 img.arrow{
     position: relative; 
-    width: 33%; 
-    margin-bottom: 10%;
+    width: 3vh; 
+    margin-bottom: 1vh;
     float: right; 
     height: auto;
     display: block;
@@ -1274,12 +1274,12 @@ a.hyperlinks:visited {
 }
 
 p.about_text {
-    font-size: 1em;
+    font-size: 2vh;
     width: 90vw;
     height: auto;
     margin-top: 0;
     margin-left: 3vw;
-    line-height: 1.2em;
+    line-height: 2.5vh;
 }
 
 #hiatus_about_mobile {
