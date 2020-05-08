@@ -27,6 +27,14 @@
     font-style: normal; 
 }
 
+@font-face {
+   font-family: 'HappyTimes';
+    src: url('fonts/happy-times-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+
 body {
     background-color: rgba(200, 200, 200);
     font-family:'NHaasGrotesk-Roman';
@@ -35,6 +43,10 @@ body {
     flex-direction: column;
     text-shadow: 0px 0px 0px ;  
     overflow-x: hidden;
+}
+
+p.layout_2 {
+   width: 59%;
 }
 
 /* HEADER */
@@ -75,6 +87,16 @@ body {
     width: 40vw;
     margin-right: 30vw;
     margin-left: 30vw;
+    position: fixed;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.rife3 {
+    cursor: default;
+    width: 26vw;
+    margin-right: 40vw;
+    margin-left: 36vw;
     position: fixed;
     z-index: 1;
     mix-blend-mode: multiply;
@@ -217,7 +239,15 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 30vh;
+    margin-top: 32vh;
+}
+
+.menu_posts_guest {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 86vh;
 }
 
 
@@ -244,43 +274,58 @@ a.issue_3{
     cursor: default;
 }
 
+div#arrow {
+    width: auto; 
+    height: auto; 
+    position: relative; 
+    right: 0;
+}
 
-#post_1, #post_2, #post_3, #post_4, #post_5 {
+img.arrow{
+    position: relative; 
+    width: 70%; 
+    margin-bottom: 0.8vh;
+    float: right; 
+    height: auto;
+}
+
+#post_1, #post_2, #post_3, #post_4, #post_5, #post_6 {
     width: 96%;
     height: auto;
     font-family: 'Cinzel';
     font-weight: normal;
     font-style: normal;
-    font-size: 3.3em;
     text-decoration: none;
     color: black;
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 3%;
+    margin-top: 2%;
     display: block;
     align-items: flex-start;
 }
 
-.title_date_1, .title_date_2, .title_date_3, .title_date_4, .title_date_5{
+.title_date_1, .title_date_2, .title_date_3, .title_date_4, .title_date_5, .title_date_6{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 
 }
 
-a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
+a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link, a#post_6_link{
     text-decoration: none;
-    transition: all 0.2s ease-in;
-    margin-top: 2%;     
+    font-size: 3.3em;
+    transition: all 0.2s ease-in;     
 }
 
-#post_1_link, #post_2_link, #post_3_link, #post_4_link, #post_5_link {
+#post_1_link, #post_2_link, #post_3_link, #post_4_link, #post_5_link, #post_link_6 {
     width: 80%;
     line-height: 96%;
     cursor: pointer;       
 }
 
-a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1_5:hover, a.glow_2_1:hover, a.glow_2_2:hover, a.glow_2_3:hover, a.glow_2_4:hover, a.glow_2_5:hover{
+a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1_5:hover, a.glow_2_1:hover, a.glow_2_2:hover, a.glow_2_3:hover, a.glow_2_4:hover, a.glow_2_5:hover,
+a.glow_3_1:hover, a.glow_3_2:hover, a.glow_3_3:hover, a.glow_3_4:hover, a.glow_3_5:hover, a.glow_3_6:hover{
     color: black;
     text-decoration: none;
 	-webkit-stroke-width: 3.75vmax;
@@ -291,7 +336,7 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
 }
 
 
-#post_1_content, #post_3_content, #post_4_content, #post_5_content {
+#post_1_content, #post_3_content, #post_4_content, #post_5_content, #post_6_content {
     display: none;
     width: 60%;
     padding-top: 0%;
@@ -311,13 +356,22 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
     font-size: 2.8vh;  
 }
 
-.post_1_subtitle, .post_2_subtitle, .post_3_subtitle, .post_4_subtitle, .post_5_subtitle{
+.post_1_subtitle, .post_2_subtitle, .post_3_subtitle, .post_4_subtitle, .post_5_subtitle, .post_6_subtitle{
     font-family: 'NHaasGrotesk-Roman';
     font-size: 0.8em;
     margin-left: 0.2vw;
     top:0;
     line-height: 0em;
     margin-bottom: 5%;
+}
+
+.post_1_subtitle_guest {
+    font-family: 'NHaasGrotesk-Roman';
+    font-size: 1.2em;
+    margin-left: 0.2vw;
+    top:0;
+    line-height: 0em;
+    margin-bottom: 8%;
 }
 
 .container_images{
@@ -348,14 +402,14 @@ a.glow_1_1:hover, a.glow_1_2:hover, a.glow_1_3:hover, a.glow_1_4:hover, a.glow_1
 .notes{
     font-size: 1.9vh;
     font-family: 'NHaasGrotesk-Roman';
-    line-height: 0em;
+    line-height: 2.2vh;
     position: relative;
 }
 
 
 .img_post_1{
     cursor: url("zoom.png"), pointer;
-    width: 98%;
+    width: 100%;
 }
 
 /*sofia*/
@@ -737,12 +791,13 @@ p.about_text {
     position: fixed;font-family: 'NHaasGrotesk-Medium';
     font-weight: 500;
 }
+
 .header{
         display: none;
     }
 
     /* RIFE LOGOTIPO */
-    .rife {
+.rife {
     width: 80vw;
     margin-right: 7vw;
     margin-left: 13vw;
@@ -760,6 +815,33 @@ p.about_text {
     position: fixed;
     z-index: 0;
     mix-blend-mode: multiply;
+}
+
+.rife3 {
+    width: 80vw;
+    margin-right: 0vw;
+    margin-left: 9vw;
+    margin-top: 3vh;
+    position: fixed;
+    z-index: 0;
+    mix-blend-mode: multiply;
+}
+
+div#arrow {
+    width: auto; 
+    height: auto; 
+    position: relative; 
+    right: 0;
+    display: block;
+}
+
+img.arrow{
+    position: relative; 
+    width: 33%; 
+    margin-bottom: 10%;
+    float: right; 
+    height: auto;
+    display: block;
 }
     
     /* MENÚ SUBTITULO + BOTÃO EDITORIAL + BOTÃO ABOUT */
@@ -831,6 +913,10 @@ p.about_text {
     z-index: 0;
 }
 
+p.layout_2 {
+   width: 97vw;
+}
+
     /* LEFT SIDE */
 #background{
     z-index: -1;
@@ -898,8 +984,6 @@ p.about_text {
 .menu_posts {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
     margin-top: 35vh;
     margin-bottom: 9vh;
     font-weight: normal;
@@ -908,11 +992,21 @@ p.about_text {
     font-style: normal;
 }
 
-#post_1, #post_2, #post_3, #post_4, #post_5 {
+.menu_posts_guest {
+    width: 100%;
+    height: auto;
+    margin-top: 77vh;
+    margin-bottom: 9vh;
+    font-weight: normal;
+    text-shadow: 0px 0px 0px ;
+    font-family: 'Cinzel';
+    font-style: normal;
+}
+
+#post_1, #post_2, #post_3, #post_4, #post_5, #post_6 {
     width: 96%;
     height: auto;
     font-family: 'Cinzel', serif;
-    font-size: 5vh;
     text-decoration: none;
     color: black;
     margin-left: 2%;
@@ -920,14 +1014,14 @@ p.about_text {
     margin-bottom: 10vw;
     display: block;
     align-items: flex-start;
-        font-weight: normal;
-        text-shadow: 0px 0px 0px ;
-        font-family: 'Cinzel';
-        font-style: normal;
+    font-weight: normal;
+    text-shadow: 0px 0px 0px ;
+    font-family: 'Cinzel';
+    font-style: normal;
     
 }
 
-.title_date_1, .title_date_2, .title_date_3, .title_date_4, .title_date_5{
+.title_date_1, .title_date_2, .title_date_3, .title_date_4, .title_date_5, .title_date_6{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -938,17 +1032,18 @@ p.about_text {
 
 }
 
-a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
+a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link, a#post_6_link {
     text-decoration: none;
     color: black;
     transition: all 0.2s ease-in;
+    font-size: 5vh;
     font-weight: normal;
     text-shadow: 0px 0px 0px ;
     font-family: 'Cinzel';
     font-style: normal;
        
 }
-#post_1_link, #post_2_link, #post_3_link, #post_4_link, #post_5_link {
+#post_1_link, #post_2_link, #post_3_link, #post_4_link, #post_5_link, #post_6_link {
     width: 80%;
     line-height: 105%;
     cursor: pointer;
@@ -970,7 +1065,7 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
     font-style: normal;      
 }
 
-.title_date_1:hover a#post_1_link, .title_date_1:hover, .title_date_2:hover a#post_2_link, .title_date_2:hover, .title_date_3:hover a#post_3_link, .title_date_3:hover, .title_date_4:hover a#post_4_link, .title_date_4:hover, .title_date_5:hover a#post_5_link, .title_date_5:hover {
+.title_date_1:hover a#post_1_link, .title_date_1:hover, .title_date_2:hover a#post_2_link, .title_date_2:hover, .title_date_3:hover a#post_3_link, .title_date_3:hover, .title_date_4:hover a#post_4_link, .title_date_4:hover, .title_date_5:hover a#post_5_link, .title_date_5:hover, a#post_6_link, .title_date_6:hover {
     color: black;
     text-decoration: none;
 	-webkit-stroke-width: 0vmax;
@@ -981,7 +1076,7 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
     font-style: normal;
 }
 
-#post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content {
+#post_1_content, #post_2_content, #post_3_content, #post_4_content, #post_5_content, #post_6_content {
     display: none;
     width: 100%;
     font-family: 'NHaasGrotesk-Roman';
@@ -990,10 +1085,18 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
     margin-top: 5%;    
 }
 
-.post_1_subtitle, .post_2_subtitle, .post_3_subtitle, .post_4_subtitle, .post_5_subtitle{
+.post_1_subtitle, .post_2_subtitle, .post_3_subtitle, .post_4_subtitle, .post_5_subtitle, .post_6_subtitle{
     font-family: 'NHaasGrotesk-Roman';
-    margin-top: 0%;
+    margin-top: -2%;
     margin-bottom: 10%;
+}
+
+.post_1_subtitle_guest{
+    font-family: 'NHaasGrotesk-Roman';
+    font-size: 2.5vh;
+    margin-left: 0.2vw;
+    top: 0;
+    line-height: 0em;
 }
 .container_images{
     width: 100%;   
@@ -1008,7 +1111,7 @@ a#post_1_link, a#post_2_link, a#post_3_link, a#post_4_link, a#post_5_link {
     width: 100%;
 }
 .img_post_1{
-    width: 100%;
+    width: 96vw;
     float: none;
     margin-right: 0%;
 }
@@ -1176,6 +1279,7 @@ p.about_text {
     height: auto;
     margin-top: 0;
     margin-left: 3vw;
+    line-height: 1.2em;
 }
 
 #hiatus_about_mobile {
