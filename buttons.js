@@ -401,7 +401,7 @@ $('.back').click(
 
 /* para abrir o primeiro post */
     
-$('#post_1').click(
+$('#post_1_link').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '100%')
@@ -460,7 +460,7 @@ $('#post_1').click(
  );
 
     /* para abrir o segundo post */
-    $('#post_2').click(
+    $('#post_2_link').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '100%')
@@ -516,7 +516,7 @@ $('#post_1').click(
  );
 
     /* para abrir o terceiro post */
-    $('#post_3').click(
+    $('#post_3_link').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '100%')
@@ -574,7 +574,7 @@ $('#post_1').click(
                 },             
  );
     /* para abrir o quarto post */
-    $('#post_4').click(
+    $('#post_4_link').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '100%')
@@ -629,7 +629,7 @@ $('#post_1').click(
                 },             
  );
     /* para abrir o quinto post */
-    $('#post_5').click(
+    $('#post_5_link').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '100%')
@@ -686,7 +686,7 @@ $('#post_1').click(
  );
 
     /* para abrir o sexto post */
-    $('#post_6').click(
+    $('#post_6_link').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '100%')
