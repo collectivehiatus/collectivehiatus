@@ -45,6 +45,8 @@ $('#close_about').click(
 //clicar no about
 $('#about_button').click(
                 function(){
+                    $('#right_side').scrollTop(0);
+                    $('#right_side').scrollTop(0);
                     $('#editorial').css('display', 'none')
                     $('#about').css('display', 'block')
                 }, 
@@ -54,6 +56,7 @@ $('#about_button').click(
     
 $('#about_button_2').click(
                 function(){
+                    $('#right_side').scrollTop(0);
                     $('#editorial').css('display', 'none')
                     $('#about').css('display', 'block')
                     
@@ -69,6 +72,7 @@ $('#about_button_2').click(
 //clicar no editorial
 $('#editorial_button').click(
                 function(){
+                    $('#right_side').scrollTop(0);
                     $('#editorial').css('display', 'block')
                     $('#about').css('display', 'none')
                 }, 
@@ -77,6 +81,7 @@ $('#editorial_button').click(
 );
 $('#editorial_button_2').click(
                 function(){
+                    $('#right_side').scrollTop(0);
                     $('#editorial').css('display', 'block')
                     $('#about').css('display', 'none')
                     
@@ -801,47 +806,12 @@ $('#blue_bar').click(
  );
 $('#close_bar').click(
                 function(){
+                    $(window).scrollTop(0);
                     $('#right_side').css({height:'0vh'});
                     $('#right_side').css({marginTop:'100vh'});
                     $('.hiatus').css({display:'none'});
                 },             
  );
-
-//$(function() {  
-//    var clickCount = 0;
-//    $('#blue_bar').click(function () {
-//        if(clickCount%2==0){
-//              //do when open
-//               $('#right_side').css({height:'100vh'});
-//               $('#right_side').css({marginTop:'0vh'});
-//            $('.hiatus').css({display:'flex'});
-//        }else{
-//             //do when closed
-//             $('#right_side').css({height:'0vh'});
-//            $('#right_side').css({marginTop:'100vh'});
-//            $('.hiatus').css({display:'none'});
-//         }
-//        clickCount++;
-//    });
-//});
-//
-//$(function() {  
-//    var clickCount = 0;
-//    $('#open_bar').click(function () {
-//        if(clickCount%2==0){
-//              //do when open
-//               $('#right_side').css({height:'100vh'});
-//               $('#right_side').css({marginTop:'0vh'});
-//            $('.hiatus').css({display:'flex'});
-//        }else{
-//             //do when closed
-//             $('#right_side').css({height:'0vh'});
-//            $('#right_side').css({marginTop:'100vh'});
-//            $('.hiatus').css({display:'none'});
-//         }
-//        clickCount++;
-//    });
-//});
     
 //clicar no about us
 $('#hiatus').click(
@@ -866,6 +836,7 @@ $('#close_about').click(
 //clicar no about
 $('.about_button_m').click(
                 function(){
+                    $('#right_side').scrollTop(0);
                     $('#editorial').css('display', 'none')
                     $('#about').css('display', 'block')
                 },             
@@ -876,6 +847,7 @@ $('.about_button_m').click(
 //clicar no editorial
  $('.editorial_button_m').click(
                 function(){
+                    $('#right_side').scrollTop(0);
                     $('#editorial').css('display', 'block')
                     $('#about').css('display', 'none')
                 },             
@@ -1014,6 +986,7 @@ $('.about_button_m').click(
     
 $('.back').click(
                 function(){
+                    $(window).scrollTop(0);
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 0)')
                     $('#arrow').css('display', 'block')
                     $('.menu_posts_guest').css('margin-top', '77vh')

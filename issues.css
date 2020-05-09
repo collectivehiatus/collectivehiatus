@@ -1258,7 +1258,7 @@ a.hyperlinks:visited {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    margin-top: -1vw;
+    margin-top: -1.5vh;
     margin-right: 3vw;
     float: right;
     display: block;
