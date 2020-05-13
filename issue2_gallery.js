@@ -242,7 +242,7 @@ function openGallery_5() {
     if (i==1) {
         document.getElementById('left').style.cssText = 'display: none';
         document.getElementById('right').style.cssText = 'display: block';
-    } else if (i==l2) {                                                                     //
+    } else if (i==l5) {                                                                     //
         document.getElementById('right').style.cssText = 'display: none';
         document.getElementById('left').style.cssText = 'display: block';
     } else {
