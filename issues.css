@@ -717,9 +717,9 @@ p.numbers {
 #about_text {
     display: block;
     position: absolute;
-    line-height: 1.7em;
+    line-height: 3.7vh;
     float: left;
-    top: 3vh;
+    top: 2.5vh;
     left: 0vh;
     width: 60vw;
     height: 100vh;
@@ -730,7 +730,7 @@ p.numbers {
     display: block;
     position: relative;
     float: right;
-    top: 3vh;
+    top: 2.5vh;
     right: 0vh;
     width: 40vw;
     height: 100vh;
@@ -740,8 +740,8 @@ p.numbers {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    margin-top: -0.4vw;
-    margin-right: 2vw;
+    margin-top: -0.5vw;
+    margin-right: 1vw;
     float: right;
     display: block;
     font-size: 2em;
@@ -762,10 +762,10 @@ p.numbers {
 }
 
 p.about_text {
-    font-size: 1.5em;
+    font-size: 3vh;
     width: 57vw;
     margin-top: 0;
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
 #hiatus_about_mobile {
@@ -1238,7 +1238,7 @@ a.hyperlinks:visited {
     display: block;
     position: relative;
     padding-top: 2vh;
-    top: 3vh;
+    top: 2.5vh;
     left: 0vh;
     width: 100vw;
     height: auto;
@@ -1247,7 +1247,7 @@ a.hyperlinks:visited {
 #contact_links {
     display: block;
     position: relative;
-    top: 3vh;
+    top: 2.5vh;
     left: 0.5vh;
     width: 100vw;
     height: auto;
@@ -1259,7 +1259,7 @@ a.hyperlinks:visited {
     color: black;
     cursor: pointer;
     margin-top: -1.5vh;
-    margin-right: 3vw;
+    margin-right: 2.5vw;
     float: right;
     display: block;
     font-size: 2em;
@@ -1274,12 +1274,12 @@ a.hyperlinks:visited {
 }
 
 p.about_text {
-    font-size: 2vh;
+    font-size: 3vh;
     width: 90vw;
     height: auto;
     margin-top: 0;
     margin-left: 3vw;
-    line-height: 2.5vh;
+    line-height: 3.7vh;
 }
 
 #hiatus_about_mobile {
