@@ -673,6 +673,7 @@ a.glow_3_1:hover, a.glow_3_2:hover, a.glow_3_3:hover, a.glow_3_4:hover, a.glow_3
     letter-spacing: 0.05em;
     font-weight: 400;
     font-size: 2.8vh; 
+    align-items: flex-start;
 }
 #post_1_content{
     
@@ -769,6 +770,8 @@ a.glow_3_1:hover, a.glow_3_2:hover, a.glow_3_3:hover, a.glow_3_4:hover, a.glow_3
 .img_post_2{
     cursor: url("zoom.png"), pointer;
     width: 58%;
+    height: 100%;
+    display: block;
 }
 
 .img_post_2_center {
@@ -1600,6 +1603,7 @@ a.post_1_link_4 {
 }
 .image_text_cont{
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
 }
 
