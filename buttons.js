@@ -117,9 +117,40 @@ $('#close_button').click(
                     $('#close_button').css('display', 'none')
                 },             
 );
+/* clicar info issue 5 */
+    $('#header_info').click(
+                function(){
+                    $('#right_side_5').scrollTop(0);
+                    $('.subtitle_buttons_5').css('display', 'flex')
+                    $('#editorial').css('display', 'block')
+                    $('#about').css('display', 'none')
+                    
+                    $('#editorial_button').css('display', 'none')
+                    $('#about_button').css('display', 'none')
+                    $('#editorial_button_2').css('display', 'flex')
+                    $('#about_button_2').css('display', 'flex')
+                    $('#close_button').css('display', 'none')
+                    
+                    
+                    $('#right_side_5').css('marginLeft', '60%')
+                    $('#right_side_5').css('width', '40vw')
+                    $('#close_button').css('display', 'flex')
+                    $('#header_info').css('display', 'none')
+                },   
 
-
-
+);
+    
+$('#close_button').click(
+                function(){
+                    $('.subtitle_buttons_5').css('display', 'none')
+                    $('#right_side_5').css('marginLeft', '92%')
+                    $('#right_side').css('width', '8vw')
+                    $('#close_button').css('display', 'none')
+                    $('#header_info').css('display', 'flex')
+                    $('#editorial').css('display', 'none')
+                    $('#about').css('display', 'none')
+                },             
+);
 /* para voltar a home page */
     
 $('.back').click(
@@ -784,6 +815,443 @@ $('#text_eng_link').click(
  );
 
 
+
+
+/* posts quinto issue */
+/* voltar homepage 5ºI */ 
+    $('#menu_back_5').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'grid') 
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    
+                    $('#menu_issues').css('display', 'block')
+                    $('#menu_back_5').css('display', 'none')
+                    
+                    $('.subtitle_buttons_5').css('display', 'none')
+                    $('#right_side_5').css('marginLeft', '92%')
+                    $('#right_side').css('width', '8vw')
+                    $('#close_button').css('display', 'none')
+                    $('#header_info').css('display', 'flex')
+                    $('#editorial').css('display', 'none')
+                    $('#about').css('display', 'none')
+                    
+                     },             
+ );
+/* post1 5ºI */
+$('#preview_post_1').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_1').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_1_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_1_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_2').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_2').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_2_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_3').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_3').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_3_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_4').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_4').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_4_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_5').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_5').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_5_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_6').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_6').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_6_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_7').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_7').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_7_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+/* post2 5ºI */
+$('#preview_post_8').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none') 
+                    $('#post_8').css('display', 'block')
+                    
+                    
+            
+                    $('#left_side').css('width', '100%')
+                    
+                    
+                    $('#post_8_content').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '60%')
+                    
+                    
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                    
+                },             
+ );
+
 }
 
 //------------------------------------------mobile-----------------------------------
@@ -865,15 +1333,21 @@ $(document).ready(function() {
 $('#blue_bar').click(
                 function(){
                     $('#right_side').css({height:'100vh'});
+                    $('#right_side_5').css({height:'100vh'});
                     $('#right_side').css({marginTop:'0vh'});
+                    $('#right_side_5').css({marginTop:'0vh'});
                     $('.hiatus').css({display:'block'});
+                    $('#editorial').css({display:'block'});
+                    
                 },             
  );
 $('#close_bar').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#right_side').css({height:'0vh'});
+                    $('#right_side_5').css({height:'0vh'});
                     $('#right_side').css({marginTop:'100vh'});
+                    $('#right_side_5').css({marginTop:'100vh'});
                     $('.hiatus').css({display:'none'});
                 },             
  );
@@ -910,6 +1384,7 @@ $('#close_call').click(
 $('.about_button_m').click(
                 function(){
                     $('#right_side').scrollTop(0);
+                    $('#right_side_5').scrollTop(0);
                     $('#editorial').css('display', 'none')
                     $('#about').css('display', 'block')
                 },             
@@ -921,6 +1396,7 @@ $('.about_button_m').click(
  $('.editorial_button_m').click(
                 function(){
                     $('#right_side').scrollTop(0);
+                    $('#right_side_5').scrollTop(0);
                     $('#editorial').css('display', 'block')
                     $('#about').css('display', 'none')
                 },             
@@ -1063,7 +1539,7 @@ $('.about_button_m').click(
  );
 
     
-$('.back').click(
+$('#menu_back').click(
                 function(){
                     $(window).scrollTop(0);
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 0)')
@@ -1086,6 +1562,7 @@ $('.back').click(
                     
                     $('#menu_issues').css('display', 'flex')
                     $('#menu_back').css('display', 'none')
+                    
 
                     $('#post_1_link').css('width', '80%')
                     $('#post_2_link').css('width', '80%')
@@ -1130,5 +1607,293 @@ $('#text_eng_link').click(
                     $('.post_1_link_2').css('display', 'none')          
                 },             
  );
+
+//para o quinto issue
+//post 1 5ºI
+    $('#preview_post_1').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_1').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_1_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_1_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+//post 2 5ºI
+    $('#preview_post_2').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_2').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_2_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_2_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+//post 3 5ºI
+    $('#preview_post_3').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_3').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_3_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_3_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+    //post 4 5ºI
+    $('#preview_post_4').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_4').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_4_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_4_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+    //post 5 5ºI
+    $('#preview_post_5').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_5').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_5_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_5_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+    //post 6 5ºI
+    $('#preview_post_6').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_6').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_6_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_6_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+    //post 7 5ºI
+    $('#preview_post_7').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_7').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_7_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_7_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+    //post 8 5ºI
+    $('#preview_post_8').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#background_5').css('display', 'none')
+                    $('#post_8').css('display', 'block')
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    $('#post_8_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back_5').css('display', 'block')
+                    
+                    $('#post_8_link').css('width', '100%')
+                    
+                       
+                },             
+ );
+    
+    
+$('#menu_back_5').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 0)')
+                    $('#arrow').css('display', 'block')
+                    $('.menu_posts_guest').css('margin-top', '77vh')
+                    $('.menu_posts_guest4').css('margin-top', '56vh')
+                    
+                    $('#post_1_content').css('display', 'none')
+                    $('#post_2_content').css('display', 'none')
+                    $('#post_3_content').css('display', 'none')
+                    $('#post_4_content').css('display', 'none')
+                    $('#post_5_content').css('display', 'none')
+                    $('#post_6_content').css('display', 'none')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'flex')
+                    $('#menu_back_5').css('display', 'none')
+                    $('#background_5').css('display', 'grid')
+                    
+
+                    $('#post_1_link').css('width', '80%')
+                    $('#post_2_link').css('width', '80%')
+                    $('#post_3_link').css('width', '80%')
+                    $('#post_4_link').css('width', '80%')
+                    $('#post_5_link').css('width', '80%')
+                    $('#post_6_link').css('width', '80%')
+                    $('#post_7_link').css('width', '80%')
+                    $('#post_8_link').css('width', '80%')
+                    
+                    //                    textos bilingues
+                    $('.post_1_link_2').css('display', 'none')
+                    $('.post_1_link_1').css('display', 'block')
+                    $('#text_pt_link').css('font-family', 'NHaasGrotesk-Roman')
+                    $('#text_eng_link').css('font-family', 'NHaasGrotesk-Medium')
+                    $('#text_pt').css('display', 'none')
+                    $('#text_eng').css('display', 'block')
+                  },             
+ );  
     
 }    
