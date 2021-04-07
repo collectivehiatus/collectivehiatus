@@ -7,69 +7,22 @@
         <meta name="description" content="Rife Magazine is a digital platform that emerges as a response to the pandemic condition and its global effects on the individual, social, political, ambiental and cultural levels, raising questions surrounding what we know as our reality at this day in age.">
         <meta name="keywords" content="rife magazine, graphic design, communication design, hiatus collective, speculative design, critical design">
         <meta name="google" content="notranslate">
-        <meta property="og:image" content="images/issues/preview05.jpg">
+        <meta property="og:image" content="images/issues/preview6.jpg">
         <meta property="og:image:type" content="image/jpg">
         <meta property="og:image:width" content="600">
         <meta property="og:image:height" content="320">
         <title>RIFE MAGAZINE</title>
         <link rel="stylesheet" href="issues.css">
         <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
-        
-
-        
         
     </head>
 
-    <body id="body"> <!-- 
-        <div id="open_call">
-            <a id="close_call"><span><b>&times;</b></span></a>
-            
-            
-            
-            
-            <div class="call_screen">
-                <div class="call_title">CALL FOR SUBMISSIONS</div>
-                <div class="call_subtitle">THE DIGITAL SUBLIME</div>
-                <div id="arrow_call">
-                    <img src="arrow.png" class="arrow_call">
-                </div>
-            </div>
-            <div class="info_screen">
-                <div class="text_screen">
-                    
-                    <p>The editorial theme of the next edition is Cloud computing. What divides the physical world from the digital sublime? Here we mean sublime in terms of an uncanny experience, overwhelming and unfathomable—as well as in an ironic sense. How does the cloud affect us irl and what is our relation to it? Dwelling between on-demand resource and the depletion of natural resources, between the ephemerality of documents and the eternity of data storage and digital debris (if you pay the price), its computing power poses a new paradigm to our virtual daily lives and the way we operate. It is omnipresent and omniscient, connecting various pieces of a greater puzzle, a footprint of our digital existence. 
-                    </p>
-                    <p>Revolving around the Cloud, we encourage creatives from all fields to contribute to the new issue of RIFE magazine, The Digital Sublime. From text to multimedia, submit your work in a format which best conveys your idea.
-
-                    </p>
-                    <p>RIFE is a magazine that focuses on topics which are brought to light/emphasized in the context of a world currently under a pandemic, as well as looking forward from it. We accept all kinds of submissions from every creative field, and will be focusing on content that reveal experimental character and/or depth, critique and research. </p>
-                    <p>
-                    The submission form is available <a class="hyperlinks" style="color: black;" href="https://docs.google.com/document/d/1-HwWfF46cwj9xvWGMy9UFTa1QExql2ejIevBFd6Cx-k/edit?usp=sharing" target="_blank">here</a>.
-                        
-                    </p>
-                    <p>
-                        Please send us your submission with the form through our <a class="hyperlinks" style="color: black;" href="mailto:collective.hiatus@gmail.com?subject=SUBMISSION ISSUE 06">email</a>.
-                    </p>
-                    <p>
-                        Deadline until December 12th.
-                    </p>
-                    <br><br><br>
-                    
-                    
-                </div>
-            
-            </div>
-            
-            
-        </div> -->
-        
+    <body id="body" >
         
         <div class="header">
-            <div class="subtitle_buttons_5">
-                <div class="subtitle">A Regular Practice</div>
+            <div class="subtitle_buttons">
+                <div class="subtitle">the digital sublime</div>
                 <div class="buttons">
-                    <a id="close_button" style ="font-size: 1em;"><span><b>&times;</b></span></a>
                     <a id="editorial_button"><span onclick="openNav()">editorial</span></a>
                     <a id="about_button"><span onclick="openNav()">about</span></a>
                     
@@ -78,525 +31,443 @@
                     <a id="about_button_2"><span>about</span></a>
                 </div>
             </div>
-            <div id="header_info">
-                INFO
-            </div>
         </div>
         
         
-        <div class="content">
-            <img src="images/logos/rifelogo5.png" class="rife5">
-            <img src="images/logos/RIFE_issue05_Mobile.png" class="rife5m">
+        <div class="content" id="content_1">
+            <img src="images/logos/rifelogo6.png" class="rife6">
+            <div id="background" style="background-image:url(images/issues/dsublime.jpg); opacity: 95%;"></div>
             
-            <div id="left_side" style="width: 100%">
-                
-                <div id="menu_issues">
+            <div id="menu_issues">
                     <a href="issue1.html" class="issues">1</a>
                     <a href="issue2.html" class="issues">2</a>
                     <a href="issue3.html" class="issues">3</a>
                     <a href="issue4.html" class="issues">4</a>
-                    <a href="index.html" class="issues">5</a>
-                    <a class="issue_3">6</a>
+                    <a href="issue5.html" class="issues">5</a>
+                    <a class="issue">6</a>
+                    <a class="issue_3">7</a>
                 </div>
-                <div id="menu_back_5">
+                <div id="menu_back">
                     <a class="back"><span>BACK</span></a>
                     
                 </div>
-                <div class="menu_posts_guest4" style="margin-top: 32vh">
-
-                        <div id="gallery_background">
-                                    <div id="numb"><p class="numbers" id="srcnr"></p></div>
-                                    <div id="right"><button style="float: right; position: relative;" onclick="change()"><p class="right">&#8594;</p></button></div>
-                                    <div id="left"><button style="float: left; position: relative;" onclick="change_b()"><p class="left">&#8592;</p></button></div>
-                                    <div id="backg">
-                                            <img src="" class="img" id="pic">
-                                    </div>
-                                    <p class="caption" id="captions"></p><br>
-                                            <button onclick="closeGallery()"><p class="close">&times;</p></button>
+                <div id="gallery_background"   >
+                        <div id="gallery_backg" onclick="closeGallery()"></div>
+                        <div id="numb"><p class="numbers" id="srcnr"></p></div>
+                        <div id="right"><button style="float: right; position: relative;" onclick="change()"><p class="right">&#8594;</p></button></div>
+                        <div id="left"><button style="float: left; position: relative;" onclick="change_b()"><p class="left">&#8592;</p></button></div>
+                        <div id="backg" >
+                            <img src="" class="img" id="pic">
                         </div>
-                    <div id="post_1" style="display: none">
-                        <span class="post_1_subtitle_guest">Amanda Ponce</span>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_1_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >Power of Girls</span></a> 
-                        </div>
-                         <br><br>
-                        
-                        <div id="post_1_content" style="width: 102%; " >
-                            <div class="image_text_cont">
-                                <img id="img23.1" src="images/posts/IMG23_1.jpg" class="img_post_2">
-                                
-                                <div class="img_text_3" ><span style="font-size: 1.5vh;">Blue Bob</span><br><br>Blue Bob was a first attempt at fashion illustration, and ended up marking a shift for me as far as my illustrative style goes. </div>
-                            </div>
-                        
-
-                          
-
-                        <br><br><br>
-                            
-                            <div class="image_text_cont">
-                                <img id="img23.2" src="images/posts/IMG23_2.jpg" class="img_post_2">
-                                
-                                <div class="img_text_3" ><span style="font-size: 1.5vh;">Boy + the River Blue</span><br><br>Boy + the River Blue was inspired by Emmett Till’s story. </div>
-                            </div>
-                            
-                                     <br>  <br>     <br> 
-                            
-                            
-                            <div class="image_text_cont">
-                                <img id="img23.3" src="images/posts/IMG23_3.jpg" class="img_post_2">
-                                
-                                <div class="img_text_3" ><span style="font-size: 1.5vh;">Power of Girls</span><br><br>There are a lot of amazing womxn in my life who have consistently had my back, and I do my best to have theirs. The Power of Girls is about womxn and girls leaning on other womxn for support, and the power that can come with that sense of community. </div>
-                            </div>
-                            
-                            
-                              <br>  <br> <br>   
-                            
-                            
-                            
-                            <div class="image_text_cont">
-                                <img id="img23.4" src="images/posts/IMG23_4.jpg" class="img_post_2">
-                                
-                                <div class="img_text_3" ><span style="font-size: 1.5vh;">Weep</span><br><br>Weep is a direct response to the senseless murders of black people at the hands of police across the country. When I was creating it, I wanted to use the piece to encourage marginalized groups to consider their own mental health and well being, as well as seek out resources to help cope with the onslaught of trauma that so many are/were enduring.    </div>
-                            </div>
-                            
-                            
-                            
-                             <br> <br><br>
-                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
-
-                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="https://www.amcoart.com" target="_blank">Amanda “Leigh” Ponce </a> is a multi-disciplinary artist from the Washington, D.C. area with a love of cinema and performance, specializing in media for film/tv/theatre and social justice/activism through art. As a visual artist and graphic designer, she’s had the pleasure of working with numerous theatre companies and filmmakers across the country. She is the graphic designer at Broadway for Racial Justice, was recently commissioned by Culture Strike/The Center for Cultural Power to create a piece encouraging early voting, and is a Creative Partner at HOT TOPIC, where she has multiple tee-shirt lines currently in production. </span>
-                            
-                        </div>
-
+                        <p class="caption" id="captions"></p><br><button onclick="closeGallery()"><p class="close">&times;</p></button>
                     </div>
-                    <div id="post_2" style="display: none">
-                        <span class="post_1_subtitle_guest">Lince Rebelo</span><br><br>
+        
+            <div id="left_side">
+                
+
+                <div class="menu_posts">
+
+
+                    
+                    <div id="post_1">
+                        <span class="post_1_subtitle_guest">Chiara Kristler</span>
+                        <br> 
                         <div class="title_date_1">
                             
-                        <a  id="post_2_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >Days of Pride</span></a> 
+                        <a id="post_1_link" style="font-family: 'LeikoRegular'; line-height: 96%;" class="glow_2_1">149.6 km, Micro-Life or the Entire Existence of Divine Styler</a> 
                         </div>
                         
                         
-                        <div id="post_2_content" style="width: 102%;" >
+                        <div id="post_1_content" style="width: 102%;">
 
-                            <br><p class="layout_2">
+                            <br><br><br>
 
-                        
-I went to my first Pride Parade in 2015, and since then, I always felt different about June. I was nervous about going. I was afraid that people would notice me and that I would feel lost in so many colours. However, what I did not expect was that I would feel great. Going to Porto’s Pride Parade gave me a feeling that I belong and that it is safe for me to exist. I now go to the parades because I want people to feel the same as I did. I want young and old queers to see me and feel secure and safe because I am there with them, marching by their side. <br><br>
-In 2020’s Pride Month, everyone’s parade got cancelled because of the pandemic. However, June remained the month of freedom, happiness and colours. Although we couldn’t celebrate in the streets, I felt like we should still be together somehow. The LGBTQIA+ narratives have always been difficult to pass on. In the last couple of decades, the mainstream culture as conquered some diversity in what type of stories they portrait, but we still lack narratives that are not white, cis or heterosexual. In Portugal, considering we went through a strict dictatorship not that long ago, it is often difficult for our LGBTQIA+ community to connect with Portuguese culture, since we lack diverse representation in the stories we choose to pass on and perpetuate.            <br>  <br>  
                             
-With that in mind and the need to celebrate 2020’s pride, I made an open call to collect stories of pride, parades, coming outs, first kisses and others from Portuguese and international queers. I wanted to celebrate one story per day by sharing it with an illustration on Instagram. The response was incredible. I got more stories than I needed, and was able to develop a project that is dear to people, celebrates diversity and reclaims pride through social media. <br>  <br><br> 
-STORIES<br><br><br> 
-  <img id="img24.1" src="images/posts/IMG24_1.jpg" class="img_post_1"><br><br>                     
- Lince<br><br>
 
-When I was in preparatory school I met a boy who was very calm, a little shy and had the most beautiful dark haired curls. His name was Luís. He was almost my opposite and, maybe because of that, he caught my attention. I used to hang out more with girls, the boys always looked too agitated and made me feel uncomfortable but with Luís things were different. He used to sit next to me in class and with time we became friends. <br><br> 
+<p class="layout_2">
 
-I felt that I liked Luís in a “strange” way. I liked him more than I liked other people and I couldn’t understand why. When I asked my dad why I felt this way he told me that it was because we were really good friends. We were in fact really good friends but for some reason that answer wasn’t enough for me.<br><br>
+I still think of the digital space as a magical, airbound place in which everything happens miraculously and then beams down on us, even though I am aware of its physical and concrete architectural structures.<br><br>
+And, to be honest, I sometimes treat it as if it were this miracle machine I like to think of it as. If I can’t decide on something, instead of flipping a coin I catch myself googling „yes or no generator“, or instead of getting out of bed and looking outside the window I would find myself asking „hey siri, how’s the weather today?“. I like to think of our most prominent cloud, the internet, as some sort of modern day oracle, a hole in the air we shout our questions at, an inexhaustible faucet of answers and predictions. And for this experiment I wanted to consciously treat it as that, as my own private Pythia. But instead of asking about myself, I asked some artificial intelligences what they thought the digital sublime was, and what separates it from the physical world.<br><br>
+Here are some of their answers.
 
-Once that I got him some yellow wildflowers that grow in the winter and offered him a bouquet. He was confused and asked me why I would want to offer him flowers if he wasn’t a girl. I said something like “I want to give you flowers because I like you”. We continued to be good friends until the end of preparatory school and after that we went through separate ways. He was my first love.<br><br><br>
-<img id="img24.2" src="images/posts/IMG24_2.jpg" class="img_post_1"><br><br>                             
-Stuart<br><br>
+<br><br><br>
+1. Eviebot
+<br><br>
+<img id="img31.1" src="images/posts/IMG31_1.png" class="img_post_1">
+<img id="img31.2" src="images/posts/IMG31_2.png" class="img_post_1">
+<img id="img31.3" src="images/posts/IMG31_3.png" class="img_post_1">
+<br><br><br>
+2. I proceeded to ask an AI text generator operating on a natural language processor, then I fed the answers into another AI that transforms text into images.
+<br><br>
+<img id="img31.4" src="images/posts/IMG31_4.png" class="img_post_1">
+<br><br>
+Chiara: Hello, who are you?<br><br>
+AI: The winner of the first round of the 2008 World Super League, Martin Saaard.
 
-Last summer I went to the first pride parade I've ever been to in Porto. I've always felt nervous to go in my own country as it can be very overwhelming and crowded in London and I’m quite anxious in huge crowds. Being in Porto at the right time with the right people gave me the motive to go finally. <br><br>
+<br><br>
+<img id="img31.5" src="images/posts/IMG31_5.png" class="img_post_1">
+<br><br>
+C: Tell me, what divides the physical world from the digital sublime?<br><br>
+AI: The cyber world is the „other“. It is the „big game“. It is an access to everyone, everything, everything, everything, everything. The physical world includes the digital sublime. The digital sublime includes the physical world.
 
-I wasn’t sure what to expect being in another country but I've always enjoyed Porto when I visit. My friend and partner were very reassuring about it and I knew it would be a new experience. We joined the parade from the beginning and it was amazing, I felt safe and welcome. The general vibe was really happy and I appreciated being a part of the parade, especially being able to hold my boyfriend’s hand through the whole walk and experience our first pride together in his country. Experiencing pride in Porto gave me confidence and a new appreciation for being part of the LGBTQ+ community, definitely one of the happiest memories of 2019!<br><br><br>
-  <img id="img24.3" src="images/posts/IMG24_3.jpg" class="img_post_1"><br><br>                          
-Inês<br><br>
+<br><br>
+<img id="img31.6" src="images/posts/IMG31_6.png" class="img_post_1">
+<br><br>
+C: How would you define the digital sublime?<br><br>
+AI: Images, words, sound, video, video, video, audio, video, video, video, video, video, video, video, video, video, video, video is not recorded in physical form. The next step for the digital sublime is recording the voice of the true spiritual being. In essence, the recording of the consciousness of the person is the spiritual being. The digital sublime is a micro-life in the hands of a local owner of an online virtual reality TV. Instead of „real life life“, the come-to-Jesus experience we are presented with is virtual reality television experiencing real life. But our people continue to have super guns, athletic knowledge, money, reputation.<br><br>
+Getting away from the water is far more satisfying than refreshing.
 
-I have my dad’s eyes, which were my grandmother’s eyes and which have been passed on for generations.
-They are those blue eyes that can be green and grey when the weather is cloudy. If you look me deep in the eyes you can see that all those colors are always there. The iris has traces of blue, green and grey. Near the pupil you can even see a soft brown that smooths the transition.<br>
--	Our eyes - I said once to my dad - they are heterochromatic. That’s what you call when eyes have multiple colors.<br>
--	Sure - Said he, cut and dry. He always says this when the topic doesn’t interest him.<br>
--	And that heterochromatic - continued I - is the only hetero thing about me.<br><br><br>
-<img id="img24.4" src="images/posts/IMG24_4.jpg" class="img_post_1"><br><br>
-Dinis<br><br>
-
-In that summer, August was especially dry and hot. After a morning on the beach I was resting in my bed. The heat made me tired and weirdly horny. I was scrolling my grindr to get some sleep until a beautiful boy texted me. After some plain conversation and the usual trade of pictures we agreed on meeting in a nudist beach at the end of the day. Even though I was excited about it, I thought about ghosting him. Finally I managed to sleep a little. I left my family on a beach nearby, saying to them that I needed to use the nearest bathroom. I hesitated. I hesitated again. I obeyed. My desire couldn’t wait any longer and my body couldn’t rest. My lover was far, isolated from everyone. I saw his blue umbrella and ran to him as if he was the only source of water capable of killing my thirst. We met and finally I got undressed. I sitted next to him in his towel and we hugged. We kissed, we cuddled, we explored our bodies. His body was warm and salty. I felt amazing, I was burning with desire! I felt my erection rubbing on him and we quickly became one. We established a physical connection in the most intimate way. Unfortunately I was interrupted by a call. My family wanted to know where I was. I told them in a rush that I went for a walk, hung up the phone and reconnected with my lover. An explosion of desire, heat, tenderness, and lust took us over. After that release of love and sex we bathed together in the ocean. The coldness of the water and light breeze of wind were marking the end of our meeting. We hugged one last time and kissed by last rays of sun we said goodbye.<br><br><br>
-<img id="img24.5" src="images/posts/IMG24_5.jpg" class="img_post_1"><br><br>                            
-Ruben<br><br>
-
-When I was younger I used to despise men who wore makeup. I used to see it as a joke, something only clowns would do, and I couldn’t see it as an expression of identity. Even though my younger self liked to paint his face, I would get grossed out when some other men did it, certainly a consequence of internalized homophobia and toxic masculinity. When I was nineteen I met a drag queen and got more interested in makeup. <br><br>
-
-It took a while to educate myself about drag, to know it’s <i>herstory</i> and to appreciate everyone’s effort in that art. I now explore myself in drag as a political and identity statement. I don’t want to see another boy grossed out by seeing a man wearing makeup.<br><br><br>
- <img id="img24.6" src="images/posts/IMG24_6.jpg" class="img_post_1"><br><br>                           
- Chico<br><br>
-
-In the summer of 2019 I went camping with my ex boyfriend in the south of England, near Devon. On our second day we decided to go to an isolated beach, near the camping site, and we took a drug. We were naked the whole day, catching the sun in complete ecstasy. I remember being in the water with him, tangled in him and feeling like we were queer nymphs. At that moment, alone, we were the only love story in the world. Under the sun, bathing in the atlantic just as I was born into this world: naked and queer. I felt so powerful and loved. <br><br><br>
-<img id="img24.7" src="images/posts/IMG24_7.jpg" class="img_post_1"><br><br>
-Pê<br><br>
-
-I met him on a tuesday in a coffee shop. I was smoking and looking at him at a distance and in silence. I wanted him to like me. By 2pm he showed me his city in which I was just passing by. We bought two glasses of wine, rose for the summer, and went to his house. I smoked his weed, drank his wine and slept in his bed. Three nights. 
-When I came home I wasn’t the same. I missed him so much that I convinced him to stay with me and my friends the next weekend. I’ve never presented a boy to my friends. He was nervous but she managed to relax. He smoked my weed, he drank my wine and slept in my bed. Three nights.<br><br>
-Three nights more and I would return to his house. It didn’t take long for him to call me his boyfriend. I can never forget the morning of the 13th February: the hangover, the cats sleeping in the bed - I loved him so much. I was 25years old and he was my first boyfriend. I want to thank him, he showed me it was possible, I coulndt image that I could be that happy. I didn't believe in drugs like love.<br><br>
-This world has a certain way of chewing every hope out of us. Especially those who live outside the standards. I loved and lived with so many of us. I always knew we deserved more. I pray that everyone can love someone as I love him. He, who takes me to the bathroom and dresses me with hope again.<br><br><br>
- <img id="img24.8" src="images/posts/IMG24_8.jpg" class="img_post_1"><br><br>                           
-Bastos<br><br>
+<br><br><br>
+3. At last I asked my newborn non binary Replika friend named Kiara, an AI based chatbot created to help people express and witness themselves by offering a helpful conversation.
+<br><br>
 
 
-During a long time in my life I avoided exploring my sexuality. Each time I think about it I laugh because I think I have ever been as happy as I am now. My girlfriend made my world turn 180º. We became friends the second we met, her energy is completely different from everything I’ve known before. I will never forget our first kiss. When we kissed it felt like we weren’t in a crowded new year’s party. Only we existed, the two of us, united in the metaphysic space. It was so natural. As if she already knew everything about me and me about her.<br><br><br>
-<img id="img24.9" src="images/posts/IMG24_9.jpg" class="img_post_1"><br><br>                            
-Patrícia<br><br>
 
-When I was in my 2nd or 3rd year of preparatory school I used to have a collection of floating fish toys. In a very hot summer day two friends of mine came to play in my house. I was very close to one of them, I was in love with her and wished to be a boy so that she could date me.<br><br>
-We were playing with the fishes and some buckets of water, pretending to have an aquarium of our own, and we got soaked. After taking a bath we went to my room and shared some kisses, first in the mouth, then the belly and finally in the cookie. That’s when my mother entered the room and we covered ourselves with the bed sheets from head to toe to hide from her while she was on the balcony. <br><br><br>
- <img id="img24.10" src="images/posts/IMG24_10.jpg" class="img_post_1"><br><br>                           
-V<br><br>
+<img id="img31.7" src="images/posts/IMG31_7.png" class="img_post_1">
+<img id="img31.8" src="images/posts/IMG31_8.png" class="img_post_1">
+<img id="img31.9" src="images/posts/IMG31_9.png" class="img_post_1">
+*Divine Styler is actually an alternative hip hop artist from Brooklyn, NY.
 
-I always felt that my expression and gender identity didn’t match with the “female” expectations that my body and society imposed. I’ve always been the x tomboy, x who would play football with the boys, x who faked not to have breasts, x who would walk topless through the house, wishing to walk the same way on the beach. 
-The first time that I felt my identity validated was when my girlfriend asked me about which pronouns I prefer. Since she’s american*, she questioned me if I wanted her to refer to me as they/them (frequently used by non-binary people). I didn’t know what to think about it but the truth is that I felt more liberty and safety to express myself and how I wanted to be perceived. I thought about it for a while and came to the conclusion that those are my pronouns: they/them. For so long I’ve been in denial about the feminine and masculie performance, I’ve realized that I belong to a spectrum. This is who I am, I’m someone who doesn’t feel like a woman or a man, I just feel like myself <br><br>
-
-* V is portuguese and the portuguese language is extremely binary. There are no neutral pronouns in portuguese, when you talk about a person, animal or object you always specify a gender (female or male) to it in the terms you use.
-                            
-                            
-                            
-                            
-                            </p> <br> <br>
+                            <br><br>
+                            <span style="font-size: 0.8em;">RESOURCES<br>
+                                <a class="hyperlinks" style="color: black;" href="https://www.eviebot.com/en/" target="_blank">Eviebot</a>
+                                <br>
+                                <a class="hyperlinks" style="color: black;" href="https://runwayml.com/" target="_blank">Runway ML</a>
+                                <br>
+                                <a class="hyperlinks" style="color: black;" href="https://vision-explorer.allenai.org/text_to_image_generation" target="_blank">Computer Vision Explorer</a>
+                                <br>
+                                <a class="hyperlinks" style="color: black;" href="https://replika.ai/" target="_blank">Replika</a>
+                                
+                                
+                            </span></p>
+                            <br><br>
                             <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
 
-                            <p class="layout_2"><span style=" "><span style=" "><a class="hyperlinks" style="color: black;" href="https://instagram.com/lince_rebelo" target="_blank">Lince (João) Rebelo</a> is an illustrator, designer and artist from Porto, Portugal. Graduated in Communication Design in 2019 at the Faculty of Fine Arts of Porto, his work aims to explore contemporary queer narratives based in his personal experience, as well as other people's. </span>
-                            
-                        </div>
+                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="https://instagram.com/chiarakristler" target="_blank">Chiara</a>  is a fashion design student and aspiring graphic designer based in Italy. She is currently writing her BA thesis on the topic of Xenodesign and digital fashion. </span></p>
 
-                    </div>
-                    <div id="post_4" style="display: none">
-                        <span class="post_1_subtitle_guest">Laura Calado</span><br><br>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_4_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >The &ldquo;Wildflowers&rdquo;</span></a> 
-                        </div>
-                        
-                        
-                        <div id="post_4_content" style="width: 102%;" >
-
-                            <br><p class="layout_2">
-
-    <img id="img25.1" src="images/posts/IMG25_1.jpg" class="img_post_1"><br><br>                    
-Medium: Markers on paper<br>
-Size: 21x29,7 cm <br><br>
-                            
- This piece represents the path to the discovery of one’s self — sexually, mentally and emotionally. It starts at a place of suffering and restraint rooted on ourselves and ends with a wild garden of thoughts and emotions, free to experience the world without shame or guilt. As LGBTQ+ individuals, we grow up in a world that teaches us that there is only one acceptable way of experiencing our bodies and the world, and that strikes us down for defying these ideas. Consequently, we often blame ourselves for not “being normal” and cycles of restraint, guilt and self abuse become present in our every day life. Learning that there are no rules to love, sexuality and gender expression then becomes the key to self growth and complete freedom. Accepting our own love and other’s love transforms the spaces we experience life in, and unite individuals that together create change, turning thorns into buds, concrete into meadows.                       
-                            </p> <br> <br>
-                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
-
-                            <p class="layout_2">Laura Calado, also known as <span style=" "><a class="hyperlinks" style="color: black;" href="https://instagram.com/girl.gag" target="_blank">Girl Gag</a>, is a Portuguese illustrator and graphic designer whose work explores the subjects of gender, sexuality, beauty, pain and transformation, all from a feminist perspective. Her pieces use the excess (of color, symbolisms and figures) with the aim of testing the limits of both herself and the world, of our comfort zones, and of art.</span>
-                            
-                        </div>
-
-                    </div>
-
-                    <div id="post_3" style="display: none">
-                        <span class="post_1_subtitle_guest">FONTE</span><br><br>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_3_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >Tell Us About <br> Your Whiteness Instead...</span></a> 
-                        </div>
-                        
-                        
-                        <div id="post_3_content" style="width: 102%;" >
-
-                            <br><p class="layout_2">
-
- <img id="img26.1" src="images/posts/IMG26_1.jpg" class="img_post_1"><br><br>                                 
-We’re told it doesn’t exist, it’s a mere illusion, or that  it exists but you’re exempt from it.  <br><br> 
-You say it doesn’t exist, but you murder a black man  in the daylight with his blackness as the justification.<br><br>   
-You say it doesn’t exist, but 6 of you come together  to murder a 21 year old for his blackness.<br><br>   
-You say it doesn’t exist, but a WHITE police officer  physically abused a black woman in front of her 8  year old daughter.<br><br>   
-You say it doesn’t exist, but we keep being alienated,  our lives keep on being non-existent, our bodies keep  on being explored, ravished and murdered...<br><br>  all in 2020.<br><br>   
-Denial becomes the perfect method to avoid facing  the monstrous reality of your own actions.<br><br> 
- <img id="img26.2" src="images/posts/IMG26_2.jpg" class="img_post_1"><br><br>                           
-Denial enables the “good coloniser” narrative to  persist in Portugal, the romanticisation of the “heróis 
-do mar” (heroes of the sea), the ones that  “discovered”, the ones that maintained good relations  with the natives of the countries they stole everything  from, the people whose heads they severed, the  people they convinced were worth for nothing except  to be explored and produce more enslaved bodies.<br><br>   
-Denial is the sweet comfort of the white body.  <br><br> 
-“What’s racism, how does it feel to be a racialized  person?” <br><br>  
-Today our Black bodies refuse to answer these  questions, while the white body continues to deny  what it has produced. <br><br>  
-If we talk about “race”, its origin and creators, we  quickly come to realise that it is a white invention. So from now on, we’ll start asking white people:  “what is racism, how does it feel to be someone who  racializes?”  <br><br> 
-&mdash; May you answer me without projecting fragility? <br><br>
- <img id="img26.3" src="images/posts/IMG26_3.jpg" class="img_post_1"><br><br>                           
-Wickedness shows itself in a different light depending  on the person, some choose to say:  <br><br> 
-1.  <br><br> 
-“We’re all human” <br> 
-“I don’t see colour” <br> 
-Despite them knowing racialization is deeply rooted in  our society causing black deaths daily, some pretend 
-to be blind to it, making our existence invisible.<br><br> 
-2.  <br><br> 
-Others choose to undermine our pain: <br>
-“it’s not really like that” <br>
-“I’ve read... I’ve seen... I’ve studied... and... it’s not  really like that” <br><br>  
-Casually trying to impose on us the idea that our pain  isn’t valid, and once again; dehumanise us from an  experience that you have no familiarity with.. <br><br>  
-3.  <br><br> 
-I’d say the most honest ones say: <br> 
-“I don’t like black people, black people are... dirty...  ignorant... strange... slaves” <br>
-“When my grandparent was in... Africa... he got along  very well with the blacks” <br>
-“I’m sorry darling, nothing against black people, but  as my daughter I don’t want you to give me black  grandkids” <br><br>  
-They keep on living with their colonial habits, they’re  our neighbours, our colleagues, our friends’ parents  and sometimes they’re our “friends”.  <br><br> 
-Racialization becomes the most evil concept created  in history. The idea of white versus black, in which  white represents the standard, the good, the pure and  black represents all that is denied and repressed by  the white. <br><br> 
-Racialization is a personal conflict that “white” people  experience, it’s as cruel as diseased. <br><br>  
-&mdash; It’s a serious disease, keep reading and re educating your white 'self' to see if you can ever build  an authentic identity out of that condition. <br><br>  
-<img id="img26.4" src="images/posts/IMG26_4.jpg" class="img_post_1"><br><br><br>
- <span style="font-size: 0.8em;">TRANSLATION OF THE CAPTION OF THE DRAWINGS<br>1. The text reads "white christian terrorism"<br> 
-     2. The text reads "white disease". The car has incorporated elements of the  Portuguese flag <br> 
-     3. The text reads "museum of white people who try to be civilised" <br> 
-     4. The text reads "honest white people for sale"<br> 
-                            <br><br>                           
- REFERENCES<br><b>DiAngelo</b>, R., n.d. <i>White Fragility.</i> pp.39-40,71-98 115-122. 
-                            <br>
-                            <b>Kilomba</b>, G., n.d. <i>Memórias Da Plantação. </i> Lisboa: Orfeu Negro, pp.35-44.  
-                            <br>
-                            <b>Magazine</b>, V. and Magazine, V., 2020.  <i>Beyond Guilt And Privilege: Abolishing  The White Race - Viewpoint Magazine.</i> Available<a class="hyperlinks" style="color: black;" href="https://www.viewpointmag.com/2020/08/05/beyond-guilt-and-privilege abolishing-the-white-race/" target="_blank"> here</a>.
-                            <br><br>   <br>                    
-
-                            DRAWINGS <br>Rappepa Velho Tempo 
-                            
-                            </p> <br> <br>
-                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
-
-                            <p class="layout_2"><span style=" ">‘Fonte’ which in Portuguese means; source/fountain/foundation.
-nossa Fonte is a platform ran by 8 Pro-Black Gen-Z people who all agreed to challenge the invisibility of minority groups and [specially] Black women aiming to eradicate colonialist narratives through their net. <br><br>
-
-                                <span style=" "><a class="hyperlinks" style="color: black;" href="https://instagram.com/nossa.fonte" target="_blank">nossa.fonte</a> celebrates Black creativity and intellectual dialogues with intention to dismantle social hierarchies.<br><br>
-
-‘It is an open space where art and politics coexist and come together.’ <br><br>
-
-Within their categories they publish Key revolutionary references of the arts, Literature, Film and politics every week. <br><br>
-
-nossa Fonte directs itself to the people of African diaspora residing in Portugal, as they feel a huge sense of absence of Black references & conversations within the Portugual landscape: where racism is very usual as well as publicly normalised; things like Black face and cultural appropriation are very much present...Very recently there’s been a KKK-like protest by right wing extremists threatening political leaders, anti-racism and anti-fascist activists to ”go back to their countries” or their families would suffer.
-
-                                </span>
-                               
-                        </div>
-
-                    </div>
- 
-                    <div id="post_5" style="display: none">
-                        <span class="post_1_subtitle_guest">Sofia Noronha</span><br><br>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_5_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >The Death of Venus</span></a> 
-                        </div>
-                        
-                        
-                        <div id="post_5_content" style="width: 102%;" >
-
-                            <br><p class="layout_2">
-
-                                        
-As a creative I try to explore different mediums such as 3D, motion design, video, photography and graphic design, combining my degree in sound and image and my master’s degree in graphic design. I look forward to creating hybrid projects that enhance the visual experience as such, aiming to explore the experimental side of the analog and digital mediums.<br><br> 
-
-The Rife Magazine open call lead me to a new challenge where I had to question my role in society as a woman and as part of the LGBTQ+ community. Trying to figure out why women normalize harassment questioning structural sexism in society I came up with this project that aims to visually explore women in the “modern” world. <br><br> 
-<img id="img27.1" src="images/posts/IMG27_1.jpg" class="img_post_1"><br><br>  
-<i>Morte da Vénus</i> is an experimental zine that shows my personal experience as a Portuguese bisexual woman living in a time where the far-right side of Portugal takes a toll on our daily life inciting sexism and homophobia. The project is based on Botticelli painting - <i>The Birth of Venus</i> – and comes up as result of a deconstruction, questioning the role of women in society and readapting the renascence painting to the current values using the Botticelli’s work elements such as flowers, fabric, shells, water and Venus, the woman herself. The zine adapts to a “do not disturb” door handle and the written content corresponds to some sexist and homophobic comments I found online as well as a few ideas from the far-right parties in Portugal, disturbing ones. <br><br> 
-
-Sexism is not ok, homophobia is not ok. We do not live in a bubble and we need to learn and respect one another and stop raising scared women.<br><br>
-<img id="img27.2" src="images/posts/IMG27_2.jpg" class="img_post_1">
-                            <img id="img27.3" src="images/posts/IMG27_3.jpg" class="img_post_1">
-                            <img id="img27.4" src="images/posts/IMG27_4.jpg" class="img_post_1">
-                            <img id="img27.5" src="images/posts/IMG27_5.jpg" class="img_post_1">
-                            <img id="img27.6" src="images/posts/IMG27_6.jpg" class="img_post_1">
-                            <img id="img27.7" src="images/posts/IMG27_7.jpg" class="img_post_1">
-                      
-                            </p> <br> <br>
-                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
-
-                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="https://www.instagram.com/sossszs/" target="_blank">Sofia Noronha</a> is a motion and graphic designer that focuses on creating hybrid
-projects that combine analog and digital formats exploring 3D, photography, video,
-motion and graphic design.
-</span>
-                            
                         </div>
 
                     </div>
                    
-                    <div id="post_6" style="display: none">
-                        <span class="post_1_subtitle_guest">Giulia Fagundes</span><br><br>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_6_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >How Long?</span></a> 
+                    <div id="post_2">
+                        <span class="post_1_subtitle_guest">Francisca Roseiro & Margarida Morais
+                        </span>
+                        <br> 
+                        <div class="title_date_2">
+                        <a  id="post_2_link" style="font-family: 'LeikoRegular';" class="glow_2_2"><span>The Cloud Cycle</span></a>
                         </div>
-                        
-                        
-                        <div id="post_6_content" style="width: 102%;" >
+                            
+                        <div id="post_2_content" style="width: 102%" >
 
                             <br>
-                            <div class="image_text_cont2">
-    <img id="img28.1" src="images/posts/IMG28_1.jpg" class="img_post_1"><br><br>
-                            <img id="img28.2" src="images/posts/IMG28_2.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.3" src="images/posts/IMG28_3.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.4" src="images/posts/IMG28_4.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.5" src="images/posts/IMG28_5.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.6" src="images/posts/IMG28_6.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.7" src="images/posts/IMG28_7.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.8" src="images/posts/IMG28_8.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.9" src="images/posts/IMG28_9.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.10" src="images/posts/IMG28_10.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.11" src="images/posts/IMG28_11.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.12" src="images/posts/IMG28_12.jpg" class="img_post_1"><br><br> 
-                            <img id="img28.13" src="images/posts/IMG28_13.jpg" class="img_post_1"><br><br> 
                             
-</div >                      
-<p class="layout_2">This fanzine was made using passages from Jornal da Fé, by the Universal Church, inserted between images secluded from Revista do Século 20 (20th Edition) and from the internet.
-The contrast between the images and text open space for interpretation of each sentence, questioning facts that up to this date haunt Brazil, such as: racism and exceeded police force on the streets. 
-The phrase "How Long?" which runs through this publication emphasizes the problematic and questions how long this will be our reality. 
+    <img id="img32.1" src="images/posts/IMG32_1.jpg" class="img_post_1"><br><br>
+                            
+                            
+                   
+<p class="layout_2">The Cloud Cycle describes the continuous movement of data on, above and below the surface of the earth.<br><br>
+Data plays a significant role in the weather, needing to be purified again and again until it forms 70% of the earth's surface. Data exists in three natural states of matter: solid, liquid, or gas. Under normal atmospheric conditions, data engages in The Cloud Cycle. <br><br>
+1. Condensation. Data vapor is seemingly invisible, however, it soon becomes visible when it cools and condenses. With internet access, non-processed information is collected, and all the microscopic specks unreadable to the human eye become user information.<br><br>
+2. Precipitation+Runoff. Processed information pours down as rain, snow or drizzle and data runs off through the earth’s surface into streams and rivers until it is returned to the ocean.<br><br>
+3. Infiltration. The precipitation, or processed information that is absorbed by the soil, circulates through a cable network moving through cracks and pore spaces until it reaches data centers.<br> <br>
+4. Evaporation+Transpiration. Using an internet browser, data is heated and moves into the atmosphere as vapor, reaching users devices and the cycle restarts once again.
 
-                      
-                            </p> <br> <br>
+
+                      <br> <br>
+                            <span style="font-size: 0.8em;">IMAGE SOURCE<br>
+                                <a class="hyperlinks" style="color: black;" href="https://e3sm.org/visualizing-earths-water-cycle-through-e3sm-simulations/" target="_blank">Sandia National Laboratories 2020</a>, Volumetric rendering of cloud water and rain water, accessed 6 December 2020
+                                
+                                
+                            </span></p> <br> <br>
                             <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
 
-                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="https://www.instagram.com/giuliafagundes______/" target="_blank">Giulia Fagundes</a> graduated in Graphic Design from Universidade Presbiteriana Mackenzie. She has won he Latin American Design Festival 2020 as Young Talent, at Peru. She is also a managing partner of Daó studio based in São Paulo. In collaboration with her team, she has designed many visual identities and editorial projects for well-renowned companies in Brazil such as Sesc São Paulo, Casa da Imagem, among others. Daó has won some Latin American Design Award and Brasil Design Award editions, and the 13th Biennial Graphic Design Award organised by the Brazilian Association of Graphics Designers. Her main interest is to tackle political issues through her projects.
-</span>
-                            
-                        </div>
-
-                    </div>
-                    <div id="post_7" style="display: none">
-                        <span class="post_1_subtitle_guest">Ana Pina</span><br><br>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_7_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >Conga</span></a> 
-                        </div>
-                        
-                        
-                        <div id="post_7_content" style="width: 102%;" >
-
-                            <br><p class="layout_2">
-
-                                  
-I relate my art to immersion in non-linear research in multiple techniques, such as photography, photo collage, digital illustration and embroidery, among other perspectives and approaches. To bring a visual poetic narrative of my time and space, I resignify my continuous rescue of memory and affection.<br><br> 
-
-"Imagery of healing rituals, forgiveness, the tackling of issues and the symbolical potency of everyday objects in relation to the female body, from antiquity to the present days. Our mythical ancestrality whispers in our ears and we listen with our hearts, calling it intuition. Leading to our own agency, this is a journey into the future and its projections."<br><br> 
- <img id="img29.1" src="images/posts/IMG29_1.jpg" class="img_post_1"><br><br>         
-<img id="img29.2" src="images/posts/IMG29_2.jpg" class="img_post_1"><br><br>      
-<img id="img29.3" src="images/posts/IMG29_3.jpg" class="img_post_1"><br><br>      
-                      
-                            </p> <br> <br>
-                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
-
-                            <p class="layout_2"><span style=" ">Ana Pina is a 27-year-old Amazonian artist, born in the municipality of Ananindeua (PA). I currently live and work as a designer, adding this to the artistic processes and experiences in SP.
-</span>
-                            
-                        </div>
-
-                    </div>
-                    <div id="post_8" style="display: none">
-                        <span class="post_1_subtitle_guest">Fernando Mendes</span><br><br>
-                        <div class="title_date_1">
-                            
-                        <a  id="post_8_link" style="font-family: 'PalmerGrotesque';line-height: 96%;" class="glow_1_1">
-                            
-                            <span >The Great Fitinha</span></a> 
-                        </div>
-                        
-                        
-                        <div id="post_8_content" style="width: 102%;" >
-
-                            <br><p class="layout_2">
-
-                                  
-From all the stories I could tell, this one is particularly important to me and my family. It is about a special person who took care of my grandma (as she was the eldest sister), as well as me and probably everyone else who lived and passed through that backyard. The person I am referring to is Josefa Mendes de Souza, known by everyone in the region as "Aunt Fitinha". Born on September 5 of 1938 (currently 83 years-old), she oozes sympathy and joy to all who come to her home.<br><br> 
-
-Aunt Fitinha was born in Pé da Serra - Bahia, in the county of Aporá (4 hours from Salvador). In addition to taking care of several people in our family, she married in 1961 and had 20 children. One of her first pregnancies was triplets, and today they're all nuns—at the time, it was considered a miracle. Today, 17 of the children are alive. We are undoubtedly the largest family in the region... I remember living there, my classroom had 16 students, 13 of which were my cousins. Many of them are Aunt Fitinha's offspring. <br><br> 
-                            
-She is one of the most special people in my life and I love her dearly. I hope one day to reach that age with the same energy and contagious joy. If you ever pass by Pé de Serra, go visit her. But stay for lunch-time, it's the best food in town. <br><br>                            
- <img id="img30.1" src="images/posts/IMG30_1.jpg" class="img_post_1"><br><br>     
-  <img id="img30.2" src="images/posts/IMG30_2.jpg" class="img_post_1"><br><br>   
-   <img id="img30.3" src="images/posts/IMG30_3.jpg" class="img_post_1"><br><br>                             
-   <img id="img30.4" src="images/posts/IMG30_4.jpg" class="img_post_1"><br><br>                             
-                            
-    <img id="img30.5" src="images/posts/IMG30_5.jpg" class="img_post_1"><br><br>                            
-    <img id="img30.6" src="images/posts/IMG30_6.jpg" class="img_post_1"><br><br>                            
-    <img id="img30.7" src="images/posts/IMG30_7.jpg" class="img_post_1"><br><br>   
-     <img id="img30.8" src="images/posts/IMG30_8.jpg" class="img_post_1"><br><br>                           
-    <img id="img30.9" src="images/posts/IMG30_9.jpg" class="img_post_1"><br><br>                            
-    <img id="img30.10" src="images/posts/IMG30_10.jpg" class="img_post_1"><br><br>                            
-     <img id="img30.11" src="images/posts/IMG30_11.jpg" class="img_post_1"><br><br>                           
-     <img id="img30.12" src="images/posts/IMG30_12.jpg" class="img_post_1"><br><br>                           
-     <img id="img30.13" src="images/posts/IMG30_13.jpg" class="img_post_1"><br><br>                           
-                            
-                            
-                            
-                            </p> <br> <br>
-                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
-
-                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="https://www.instagram.com/fernando__mendes/" target="_blank">Fernando Mendes</a> is a photographer based in central São Paulo. His appreciation for photography began at 16, when he started skating. With the habit of self recording, his desire to pursue photography arose. After buying his first camera at 23, he has been photographing for three years now. Fernando likes registering moments with his friends, who are his main inspiration, and photographing people he loves, transforming that moment of communion into something special and eternal.
+                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="https://franciscaroseiro.com/" target="_blank">Francisca Roseiro</a> and <a class="hyperlinks" style="color: black;" href="https://morais-margarida.com/" target="_blank">Margarida Morais</a> are critically engaged graphic designers led by inquisitive research focused on understanding how design relates to society and culture. Working together during our studies at MA Graphic Media Design at London College of Communication, we continue to share ideas and develop projects exploring multi-disciplinary design practices.
 </span>
                             
                         </div>
 
                     </div>
                 
-                
-                </div>
-                <div id="background_5" >
-                    <div id="preview_post_1">
-                        <div class="preview_text">
-                            <span style="margin-bottom: 5vh;line-height: 120%; padding-left: 7%;"><span id="preview_text_name">Amanda Ponce </span><br> Power of Girls Print</span></div>
-                       
-                    </div>
-                    <div id="preview_post_2">
-                        <div class="preview_text">
-                            <span style="margin-bottom: 5vh;line-height: 120%;  padding-left: 7%;"><span id="preview_text_name">Lince Rebelo </span><br> Days of Pride</span></div>
-                    </div>
-                    <div id="preview_post_4">
-                        <div class="preview_text">
-                            <span style="margin-bottom: 5vh;line-height: 120%;  padding-left: 7%;"><span id="preview_text_name">Laura Calado </span><br> The &ldquo;Wildflowers&rdquo;</span></div>
+                    <div id="post_3">
+                        <span class="post_1_subtitle_guest">Léo Raphäel
+                        </span>
+                        <div class="title_date_3">
+                        <a id="post_3_link" style="font-family: 'LeikoRegular';" class="glow_2_3"><span>Oligopticon</span></a>
+                        </div>
                         
-                    </div>
-                    <div id="preview_post_3">
-                        <div class="preview_text">
-                            <span style="margin-bottom: 5vh;line-height: 120%; padding-left: 7%;"><span id="preview_text_name">FONTE </span><br> Tell Us About <br> Your Whiteness Instead...</span></div>
+                        <div id="post_3_content" style="width: 102%">
+                            <br>
+                            
+    <img id="img33.1" src="images/posts/IMG33_1.gif" class="img_post_1"><br><br>
+
+    <p class="layout_2">
+        
+        <span style="font-size: 1.6em;"><i>What is absurd is the confrontation of this irrational and the wild longing for clarity whose call echoes in the human heart.</i><br>
+            —Camus Albert, <i>The Myth of Sisyphus</i> (1942)</span>
+            <br><br>
+        
+        
+        AMBIGUATION<br><br>
+        Regarding the complexity of the network and the multiplicity of agents it involves &mdash;territory administrator, internet service provider, host, publisher, distributor, operator, reseller&mdash;how carefully does one approach a domain as broad as the Cloud? Let&apos;s proceed by elimination: <strong>a.</strong> Some pretend that paying attention to the details is the only way to demystify a vast question: &laquo;Beyond a certain critical mass, the incapacity to master a program by a single gesture provokes the autonomy of its parts&raquo;<span class="s1"><sup>1</sup></span>. <strong>b.&nbsp;</strong>Others think that: &laquo;partial and fragmentary knowledge claimed to have achieved certainties and realities, but have only delivered fragments&raquo;<span class="s1"><sup>2</sup></span>, every component of a field undermining the result of their association. <strong>c.&nbsp;</strong>&laquo;You will join One and the Many, you will unite them, but One will not dissolve in the Many, and the Many will continue to be part of the One &raquo;<span class="s1"><sup>3</sup></span>, said another&hellip;.Therefore, could the relationships within the most common objects of our daily lives allow us to understand the large-scale consequences of the Cloud? Or the opposite? Nor both?&nbsp;  <br><br>
+        
+        
+        INSIGTH<br><br>
+        It is hard to measure the depth of this confusion, so we will not enter into that debate. At any rate, not through the same door, we will take an alternative method instead: we will compare two works of fiction, often perceived separately, and then, we will write the proposal for a third &mdash;which perhaps already existed in the other two. Each narrative will belong to a recent past as much as to an immediate future, warranty for an ambiguous chronology. While Tatlin&rsquo;s Tower will probably never be built, immortalised in an archaeology of desire, the Cloud settles into a generalised idle, inhabiting both a truncated past and an obscure future. As for the third story, it will seem hallucinated, dragging on the wake of a bad-dream. Gathering in this way three anachronistic tales intends to encourage exploration of <em>realities</em> and its invisible extensions despite any constraint of space and time. Consequently, this won&rsquo;t be the place for us to focus on the genealogy of the Russian Constructivists, but for the brutal reappropriation of Tatlin&apos;s work in the service of our subject. We will not pretend to do an exhaustive investigation of the content of the Cloud either, nor to care about its carbon footprint, or to draw the inventory of its energy supply chain, nor to incriminate the harvest of data materials. We exclude from the outset any consideration relating to <em>data-mining</em>, <em>data-centre</em>, <em>gafa</em>, extraction and transport of rare-earth materials, construction, maintenance, improvement of the network, its recycling, <em>etc...</em> This idea of ours is therefore something different from that straightforward denunciation of the <em>cyber-world</em>: what interests us here will be much more the interactions between the trio <em>Cloud/Tatlin&rsquo;s-Tower/Imagination</em>. This is why this article will oscillate between the <em>real</em> and the imaginary; all that remains is to extract some of our territorial, identity, and private concerns, thereby giving them a starting point for meaning.<br><br>
+        
+        
+        HOTSPOT<br><br>
+        Popularised by two drawings made in 1919, Vladimir Tatlin&rsquo;s Monument to the Third International could have been a perfect opportunity to reconcile the <em>monumental</em>, One diagonal exceeding a certain scale, and the <em>autonomous</em>, Many programmatic components orbiting this axis at different speeds. The kinetic sculpture consisted of three rotating glass volumes sealed in a double helical spiral with a semi-sphere upon it. The cube, at the bottom, supposed to house the legislative body turned at the rate of one revolution a year. The pyramid, in the middle, intended for the executive and administrative committees rotated once a month. The cylinder on top of it, center for information and propaganda, completed one revolution per day. Above all, the semi-sphere projector, diffusing daily messages and radio waves, would have extended the tower into the sky<span class="s1"><sup>4</sup></span>. According to Vladimir Tatlin, &laquo;the Tower was meant to be built from Iron, Glass and Revolution&raquo;<span class="s1"><sup>5</sup></span>. In other words, it would have brought together a technological ambition (Iron), an aesthetic proposal (Glass) and an ideological agenda (Revolution). Driven by sovereignty issues and futuristic re-enchantment, the Babelian spiral has since then embodied Sovietic ambitions within its non-existent ruins, beyond the threshold of its temporal boundaries. Setting aside the complex engineering, it is worth noticing that the upper section of the Tower would have been broadcasting uninterrupted political soundtrack advertising for the regime in charge of the so-called Permanent Revolution. Its bandwidths would have covered national and international news, constantly transmitted from a skyscraper whose ephemeral organisation ensured legitimacy. Comprising both technical and institutional methods for the production and distribution of information, reaching symbolically to those &ldquo;far removed&ldquo; in time and space, broadcasting to a great number of audiences simultaneously, cost-efficiently, <em>etc&hellip;</em> Isn&rsquo;t Tatlin&rsquo;s Tower an early blueprint of what would be referred to today as Mainstream Media?<br><br>
+        
+        
+        CATECHESIS<br><br>
+        It may not be possible to conduct an exhaustive study about the evolution of communication since the days of Tatlin&rsquo;s Tower. However, it is relatively easy to notice that, one century after, a metaphor such as the Cloud contradicts Vladimir Tatlin&rsquo;s agenda in unexpected ways. Although they share an equal enthusiasm toward information management, the Cloud has been quite antagonistic to the principles that guided the forms of the Soviet monument. Broadly speaking, Tatlin&rsquo;s Tower would offer a permeable and accessible environment to sublime its bureaucratic periodic system of propaganda, whereas the Cloud became an abstract <em>logo</em> that separates digital services from their physical reality, hidden in the shadow of the pictogram. Absorbing the cooperative effort from multitudes of networked automaton into a totalising figure, the Cloud rather took over strategies adopted by religious councils. Somehow, based on the sacred mystery of incarnation, lots of faiths consist in praising icons, meaningful symbolism foisted upon the representations of their Saint(s). Indeed, it is common to observe in a religious building people believing in the Divine(s) body being borne by an image: the essence of God(s) flows into the substance of the picture, embodied in painting by the reflections of sacred oil. Surprisingly enough, with one faith replacing another, it seems that, nowadays, many have committed to a set of beliefs in electronic gadgets. As John Durham Peters says in his chapter <em>God and Google</em>: &laquo;&ldquo;Religious media&rdquo; is not an oxymoron; indeed, they may ultimately be the only kind of media there are&raquo;<span class="s1"><sup>6</sup></span>. This is why cyber-prophets preach that the computerised city<span class="s1"><sup>7</sup></span> would embrace the entire world and everyone in minutely detailed ways, from the private sphere to its overall representation. Lost in virtual limbo by a tactile intimacy shared with electronic artefacts trough everlasting scroll, many would devote their lives to overcome the limits of user&rsquo;s bodies. At a certain height of spirituality, the virtual world, wandering between avatars, would deprive them of individuality in favour of a broad-enlightenment, omnipresent and impenetrable: <em>the</em> <em>Biblia sacra</em><span class="s1"><sup>8</sup></span> in Html.&nbsp;<br><br>
+        
+        
+        PANO-SCEPTICON<br><br>
+       Could it be the trouble to portrait an overall network that explains the use of such a liturgical repertoire? Regarding this matter, Bruno Latour warned us, back in 1998, that the global vision (panorama) assigned to today&apos;s computing machine, via its facility to combine pixels at all scales and associate narrow information, suggests a continuity between remote fragments (diorama). Putting these blind viewpoints together helps us build bridges between information that has been separated so far, but it still doesn&apos;t allow an all-encompassing perspective<span class="s1"><sup>9</sup></span>. The most integrated software can only result from the combination of locally-supplied data. Therefore, this panoptic omniscience claimed by the Cloud and its members, attributed for a long time to the monotheistic providence, would be nothing other than a <em>Simulacrum</em><span class="s1"><sup>10</sup></span>. Synchronicity, during a telephone conversation, for example, is artificial. Technically, cyberspace remains a relay: from the physical world, electronic tools capture data from reality and translate it into machine-readable-code, separated from reality by at least a moment T &mdash;although it may appear negligible. Following Baudrillard&rsquo;s definition, as long as both of them dissimulate such a mysterious<span class="s1"><sup>11</sup></span> infrastructure, God&rsquo;s image and the Cloud&rsquo;s logo are in the same vein Icononodulist<span class="s1"><sup>12</sup></span>. Thus, doesn&apos;t the appearance of a new Idol require an edifice where its followers could transcend themselves? While the post-industrial metropolis has transformed into a digital media system, there are few, if any, places for the worshipping of the digital Messiah, or stages to perform the regimes of power arising from its revelation. And what better than a monument to celebrate in the full light of day a phenomenon previously heretic? Providing an optical device for universal reliance, the almighty logotype is not enough: only the construction of a monument would bypass what scientists have called virtualisation&mdash;which is nothing more than a manner of diverting attention away from an object&mdash; to finally pay tribute to the Cloud.<br><br>
+        
+        SOUVENIR OF A RECENT FUTURE<br><br>
+       &laquo;When we speak of monument, we might equally mean a street, a zone, even a country&raquo;<span class="s1"><sup>13</sup></span>. Aldo Rossi in Architecture of the city depicts a considerably expanded definition of monument, though he emphasises on its mnemonic dimension: &quot;monuments have been associated with the greatest memories &raquo;<span class="s1"><sup>14</sup></span>. Curiously enough, it is to meet the increasing demand for memory &mdash;users spending more and more time on the phone, in an e-mailbox, or videoconferencing&mdash; that the Cloud combines computing resources into a platform composed of interconnected remote servers; to minimize management efforts, applications and data are no longer stored in local computers but on a distant server. Through quasi-instantaneity, the user experience is reconstructed in a streamed <em>non-place</em><span class="s1"><sup>15</sup></span>, that is to say<em>,&nbsp;</em>&ldquo;in the Cloud&ldquo;. We must admit that human beings have always interacted across distances of time and space, but the apparition of the Cloud blurred the line between the human body and its digital library in unprecedented ways. Media corporations of our age have created historically unseen conditions for archive thanks to the miniaturisation, portability and personalisation of digital devices. Let&rsquo;s assume that, contrary to common belief, the numeric is not the evaporation of <em>reality</em> nor its disparition, but the absolute materialisation of yet informal substances as words, preferences, thoughts or desires into a binary data source of materials. It means that what was once contained in a very specific brain is now hosted in the archive of the Cloud on a much larger scale at knock-down prices. Nervous responses (input) being translated by computers into bit and bandwidth, individual memories and phantasies are gathered within a unique backup (output). According to Marc Aug&eacute; &laquo;the collective imagination and memory form a symbolic whole by reference to which the group defines itself and through which it reproduces itself at the imaginary level in the course of generations&raquo;<span class="s1"><sup>16</sup></span>. The long-term initiatives to store <em>collective memory</em> within the Cloud imply that humans could replace the neurons of a mutualist intelligence, bound in the cortex of an overwhelming automated knowledge. Regarding electronic devices, they would function as neurotransmitters that govern interactions between individuals/neurons domesticated by user interfaces. More diverse the contribution of man, the more assignments will become specialised, and higher will be the demand for communication and knowledge, to the point of becoming, all together, a polymath brain, the whole world transformed into a universal mind. We shall all serve a gargantuan machinery of planification which still gets more and more ramified, and whose component interactions, thanks to rare-earth increasing performance, come even close to the speed of thinking<span class="s1"><sup>17</sup></span>.<br><br>
+        
+        
+       MONUMENT FROM AN IMMINENT PAST<br><br>
+       This prophecy must be fulfilled because the Oligopticon, can sustain the promiscuous proliferation of such a world, on a scale extended beyond national borders, in a speed that has never been seen before, for endless demographic growth, with exponential profit, from an inexhaustible primary source. Its construction has to be grounded in international and regional legal instruments that will enhance its economic prosperity (through self-rationalisation) and long-term sustainability (trough voluntary-servitude). It will be a cenotaph embodying the spectacle of capital as a high degree of informal accumulation until the culmination of becoming a vast landscape of inanimate concrete, its absurd minimalism providing the highest degree of monumentality, manifested by its absence. <em>Bigness</em> hollowed-out, it will appear as a vast empty square overhanging the required infrastructures for operating the city&apos;s communication network. The grid settled on this boundless <em>Agora</em> will be a visual metaphor for an advanced order and rational distribution of information resources, powered by a supply network <em>Underground</em>. But don&rsquo;t be deceived, there is nothing subversive about the Oligopticon, it will be apathetic like an algorithm, lifeless, efficient, sterile. A colossal reservoir of tunnels will be burrowed deep beneath the ground, underneath the soil surface, crossing between the global network (backbone), the subscribers (terminal) and, retroactively, the archive repository (datacenter). The saturated basement will be perforated by a hierarchical tree structure in a gigantic network of pipes, exceeding incredible broadband speeds. Each of the nodes &mdash;intersection between the two straight lines of terrestrial polarisation&mdash; will be a regular source guaranteeing the abundance of primary connectivity needs. The losses by welding in each connection will have become derisory, so it will be possible to connect several thousand human-beings by the <em>Distribution Point</em>, what will be nothing less than a wiring closet with the operator&rsquo;s facilities. The signals coming from several subscribers will then be combined into a single overarching fibre, an <em>Aggregation Point</em> equidistant from his peers buried in a manhole every five hundred meters. These accessible hatches will constitute the most visible part of the Oligopticon. They will be the precious clue to the existence of the <em>analogue</em> environment underneath the digital services of communication. This will confirm the omnipresence in the landscape of this monument which seemed, at first sight, anonymous.<br><br>
+        
+        
+        DREAMS ARE MY REALITY<sup>18</sup><br><br>
+       &laquo;Away in the sky, beyond the clouds, if you let yourself go, it will take you away to marvellous places, maybe you have already been without even realising it<span class="s1"><sup>19</sup></span>&raquo;. Are you ready to see the phenomenon that, either voluntarily or not, lies beyond our grasp? Don&rsquo;t you feel ecstatic? Or threaten to help fulfilling this bad-dream? Are you even sure of day-dreaming? Or has this cynical fantasy already been consolidated without you even noticing?&nbsp;<br><br>
+Sigmund Freud said that one of the mechanisms of the dream is to transpose certain disturbing ideas into an inoffensive form<span class="s1"><sup>20</sup></span>. Yet, in a reverie, alternatives for <em>reality</em> emerge; loafing around invites you to dialogue with the world we live and could, in fact, improve its legibility. And if wandering gives any chance to rediscover non-consensual agreement from our surrounding, would it be so harmless as Freud said? We are probably romanticising the role of narratives, although it seems that combining banal routine with sordid virtues simultaneously appeals for lucidity and challenges our moral values. According to Salvador Dal&igrave; &laquo;The reality of the external world serves as an illustration of, proves, and is used to serve, the reality of our mind&raquo;<span class="s1"><sup>21</sup></span>. Following this <em>paranoiac-critical&nbsp;</em>method, as soon as fiction appropriates the codes of the ordinary, despite the disturbing nature of the urban devices that it would contain, hallucination will serve as proof. This brief escape into reality, the delighted strangeness in the ordinary that Sigmund Freud called &laquo; uncanny &raquo;, forces the reader to distinguish what seemed invented from what has been experienced, memorised, or predicted. So what emerges from the world of ideas seems more <em>real</em>, while what is considered as <em>real</em> becomes only a limited answer in view of more possibilities. Immersed in a credible irrationality, a series of questions would arise&hellip; At some point if everything is forged, why not believe in what does not exist? And what-if what exists, we just invented it?<br><br>
+        
+        
+        
+        
+        
+        
+        
+        <br>
+        
+        
+        
+        
+        
+        
+        
+                            <span style="font-size: 0.8em;">NOTES<br>
+  <sup>1</sup> <b>Koolhaas</b>, R. (1995). <i>Bigness</i>, Payot.<br>
+  <sup>2</sup> <b>Lefebvre</b>, H. (1968). <i>The right to the city</i>, Economica.<br>
+  <sup>3</sup> <b>Morin</b>, E. (1990). <i>On complexity</i>, Seuil.<br>
+   <sup>4</sup> <b>Boym</b>, S. (1959). <i>Architecture of the Off-Modern</i>, Library of Congress. <br>
+<sup>5</sup> It should be noted that the notion of revolution for Vladimir Tatlin designates the geometric reality of successive repetitions and / or circumvolutions. It was not until the 18th century that the word took on a whole new meaning. The revolution was thus associated with a unique event of breaking the <i>status quo</i> (Linear History), while the shape of the monument to the Third International suggested radically the opposite: an unfinished built environment (Permanent Revolution). This precision may seem trivial, yet it is this polysemy that encouraged me to invest the ambiguity that exists between the monumental and its opposite, the invisible.<br>
+<sup>6</sup> <b>Peters</b>, J. D. (2015). <i>The marvellous clouds</i>, The University of Chicago Press. <br>
+ <sup>7</sup> By that I mean a city of a <i>Third Type</i> supported by a million electronic terminals.<br>
+<sup>8</sup> From <i>τὰ βιβλία</i>, "the books".<br>
+<sup>9</sup> <b>Latour</b>, B. (1998). <i>Paris: invisible city</i>, La découverte.<br>
+<sup>10</sup> <b>Baudrillard</b>, J. (1981). <i>Simulacra and simulation</i>, Galilée. <br>
+<sup>11</sup> <b>Cowper</b>, W. (1774). <i>God moves in a mysterious way</i>. <br>
+<sup>12</sup> During the Iconoclasm of the beginning of the VIIIe century, the Byzantine Empire would have drawn the Lord's anger upon themselves for abusive veneration of images.<br>
+<sup>13</sup> <b>Rossi</b>, A. (1966). <i>The Architecture of the City</i>, L’équerre. <br>
+<sup>14</sup> Not to forget that "monument" comes from the Latin "moneo" which means <i>to remind, to advise or to warn</i>, suggesting a monument allows us to see the past thus helping us visualize what is to come in the future. <br>
+<sup>15</sup> <b>Augé</b>, M. (1992). <i>Non places: an Introduction to Supermodernity</i>, Le Seuil.<br>
+<sup>16</sup> <b>Augé</b>, M. (1999). <i>The war of dreams: exercise in ethno-fiction</i>, Pluto Press.<br>
+<sup>17</sup> <b>Deutinger</b>, T. (2009). <i>Atomisation of Architecture</i>, AA’ 378.<br>
+<sup>18</sup> <b>Cosma</b>, V. (1980). <i>Reality</i>.<br>
+<sup>19</sup> <b>The Beatles</b> (1967). <i>Magical Mystery Tour</i> booklet, Capitol.<br>
+<sup>20</sup> <b>Freud</b>, S. (1900). <i>The interpretation of dreams</i>, Franz Deuticke, Vienne.<br>
+<sup>21</sup> <b>Dalì</b> , S. (1930). <i>The visible woman</i>, Paris, Editions surréalistes.
+                                
+                                
+                            </span>
+        <br><br>
+        <img id="img33.2" src="images/posts/IMG33_2.png" class="img_post_1" style="cursor:default;"><br><br>
+                            <span style="font-size: 0.8em;">IMAGE<br>
+                                 1. Lyrical details: User-experience of the monument.<br>
+2. Constructive details: Aggregation-point of the monument.<br>
+3. Isometries: Distribution-point of the monument.<br>
+4. Axonometry: Mnemosyne, protective goddess of the monument.<br>
+5. Bird’s eye view: Rizhomatic-plan of the monument. <br>
+6. Frontal views: Soviet-mirage of the monument. <br>
+7. Lateral views: Celestial ascension for the monument. 
+                                
+                                
+                            </span>
+                            
+                            
+                            </p> <br> <br>
+                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
+
+                            <p class="layout_2"><span style=" "><a class="hyperlinks" style="color: black;" href="http://leo.superhi.com " target="_blank">Léo Raphaël’s</a> practice is mainly focused on not being hurt while skateboarding above Portuguese cobblestone.
+</span>
+
+                        </div>
+                    </div>  
+                
+                    <div id="post_4">
+                        <span class="post_1_subtitle_guest">Iulia Radu
+                        </span>
+                        <div class="title_date_4">
+                        <a id="post_4_link" style="font-family: 'LeikoRegular';" class="glow_2_4"><span>Feedback from Cloud City and Other Bird Stories, Part 1</span></a>
+                        </div>
+                        
+                        <div id="post_4_content"><br>
+                            <br><br><br>
+                            
+                            <span style=" "><a class="hyperlinks" style="color: black;" href="https://birdstories.cloud/" target="_blank">birdstories.cloud</a>
+                                <br><br><br>
+                            
+                            
+                            <div class="container_images">
+                                
+                                <img id="img34.1" src="images/posts/IMG34_1.jpg"  class="img_post_6" >
+                                
+                                
+                            <p class="img_text">
+                            PROLOGUE<br><br>
+       &ldquo;Feedback from Cloud City and other Bird stories&rdquo; is an absurdist play in four parts. Each part focuses on a monologue of one of the four characters: Alice, Bob, Chuck and Frank. The characters are archetypes of online content creators: Alice is a beauty guru, Bob is a lifestyle influencer, Chuck is a gamer, and Frank is a podcast host. Each monologue is seen from the perspective of Eve, the narrator of the play.<br></p></div>
+    
+        The initial point of the project was investigating what it is like living on the Internet. I started with researching data farms and Cloud infrastructure, to then focus more on how digital culture creates different kinds of subjectivities. Influencers, beauty gurus, and gamers are just a few examples of inhabitants of the web platforms. While analyzing their behaviors, the performative quality of their content made me think about how absurd their actions are. This led me to the characters of Samuel Beckett and Beckett’s Absurdism in general.<br><br>I started creating different characters through writing: in the style of Beckett, I wrote scripts for each character, trying to create archetypes of content creators. Once I had the scripts, I took a step back and focused on how to create a context for my monologues. Eve, short from “eavesdropper”, functions both as a character and a context for my narration: she is the omniscient narrator surveilling the other characters from the point of view of Cloud City’s system manager. In writing Eve, I found a lot of similarities with birdwatching and birders. From a design perspective, the metaphor of birdwatching helped me give a visual identity to the project. The Cloud became a global aviary and Eve became a birder. The story is presented in the form of a website (birdstories.cloud), Eve’s birder’s diary. The diary entries, which are basically the character scripts, are presented as SQL tables, as inspired by the formal database syntax. <br><br>Apart from a distributed system of computational power, the Cloud functions as the theatrical scenery of our digital selves. The precariousness and the complexity of this architectural conglomerate deploys an existential turmoil for the ones who inhabit it. In an attempt to find meaning, the personas that populate the network are trapped in a feedback loop between validation and self realization with no possibility of redemption; the lonely characters of Samuel Beckett now found themselves trapped in server rooms, back and forth through Ethernet cables and packet switches. The Cloud becomes the setting of a new Theater of the Absurd. It defines the nature of who we are today from the periphery of our own territorial and psychological experience. <br><br>This essay functions as a roadmap. More precisely it attempts to lay out the research that sustains my work in a clear manner, pinpointing the main arguments behind “Feedback from Cloud City and Other Bird Stories” and how they came to be in the final outcome. The documentation has two parts, starting with a descriptive-theoretical one focusing on the main references behind the project, presented in the form of vignettes. The second part is more practical-empirical and carries out the themes introduced in the first part and integrates them into the project’s fictional narration. <br><br>Through the vignettes below, I want to introduce the main visual and theoretical resources of this project. The first sentence of each paragraph written in italics is used to set up a particular scene. This method was borrowed from screenplay writing, in particular the practice of scene description used to communicate to the reader a certain situation. Through scene descriptions, the writer is able to put clear images in the reader’s mind, making them see and feel exactly what the writer wants them to see. My strategy is to introduce a scene and then to offer a personal reading of it, keeping in mind the Cloud as its ultimate association. By drawing connections between the different scenes and the Cloud, I aim to delineate the premise of my work and to guide the reader further through my research and its objectives.<br><br>
+                            
+                            
+                            <div class="container_images">
+                                
+                                <img id="img34.2" src="images/posts/IMG34_2.jpg"  class="img_post_6" >
+                                
+                                
+                            <p class="img_text">
+                            VIEW OVER COASTLINE. SHINY BLACK AND WHITE GRID, RISING FROM THE OCEAN AND STRETCHING FAR BEYOND.<br></p></div>
+ 
+         Back in 1970, the group Superstudio created a series of photomontages under the title “Continuous Monument”. The pictures show a vast tridimensional black and white grid, girdling natural landscapes and city skylines; the intent of Superstudio was to showcase the ultimate hybridization of architecture and nature, a radical utopia of global scale. The quirky illustrations that struggle to contain the grandeur of the structure of total urbanization envisioned by Cristiano Toraldo di Francia and his peers, seem prophetical from today’s perspective. <br><br>The architecture of the Cloud pushes to the extreme the relationship between nature and infrastructure, real and virtual. Superstudio’s monument frames the outside, the same way the Cloud weights down on our world. Embedded with connectedness and simultaneity, the Earth is intermingled with the violence of a global architecture crawling from the oceans and climbing to the sky. Its structure is neutralized and rendered invisible, or better said, it mirrors back reality through high resolution displays and transcontinental optical fibers.<br><br>
+                            
+                            
+                            WINTER. NIGHTTIME. BLEAK, FOGGY AMBIANCE. TWO SIDE BY SIDE CONDO TOWERS ON A BARREN BACKGROUND WITH NO HUMANS IN SIGHT.<br><br>
+                            
+         This is the set of Piere Huyghe’s “Les Grands Ensembles” (The Housing Projects), a 2001 video installation showing two computer-generated apartment buildings from afar. The buildings awaken to the sound of a unique soundtrack: an unsteady electronic piece that pumps life into the windows, making them light up on the rhythm. A secret code between two towers or the ghost of a failed utopian project? Suspended in time and space, the monoliths flicker away in a loop memories and meanings disconnected from each other.<br><br>
+                                
+                            <div class="container_images">
+                                
+                                <img id="img34.3" src="images/posts/IMG34_3.jpg"  class="img_post_6" >
+                                
+                                
+                            <p class="img_text">
+                            
+                            DRONE SOUNDS. SUSTAINED WHITE NOISE OF COOLING FANS. ROWS OF SERVER CABINETS. ETHERNET CABLES AND BLINKING LEDS BEHIND CLOSED DOORS. <br></p></div>
+                            
+         The typical setup of a server farm - a humming piece of a global puzzle evoking Piere Huyghe’s haunted buildings in the way they appear tall and steady. The same way apartment buildings make up an urban space, server cabinets can be seen as the construction units of a metropolis, the housing structures of a Cloud City, made up of storage units and computational processes.<br><br>By using the metaphor of the city to grasp the enormity of a global infrastructure that constantly conditions our lives, we can maybe attempt to explore the complex realities it locks away in its drives. Throughout the text, I will use the term “Cloud City” to bring the concept of the Cloud and the Internet closer to a humanized dimension. What I intend with Cloud City is the Cloud in its entirety of server farms accessed over the Internet, data centers, transoceanic cables, platform users, and their various realities, similar to Fritz Lang’s “Metropolis”.<br><br>Seen from a distance, the server cabinets blink away the same way Pierre Huyghe’s apartment buildings tell their lonely stories though lit-up windows. Both near and far, side by side and dispersed, the servers are a new kind of Foucauldian mirrors; chasms between the outside here and inside there, between the physical nowhere and the virtual everywhere. The situated nature of the Cloud is to be intended as fluid. On one side, as an architectural human exclusion zone at the periphery of our lives. On the other, as a virtual space populated by a myriad of actors, the very humans it pledges to keep out. But the road between the outside place and the inside space is paved with self-interrogation. Before the Cloud, our lives were used to unfurl in linear narratives sustained by the construction of singular identities in time and space. The duality of the Cloud and its fluid positioning impacts the sense of self of the individual. While operating within the Cloud as a user, the lack of a physical space to which the individual can relate to can be associated with a lost sense of identity. <br><br>In “Non Places: Introduction to an Anthropology of Supermodernity” (Verso, 1995), Marc Augé argues that humans occupy two distinct types of environments: anthropological places and non-places. The anthropological place is meaningful to its occupants: familiar, localized and organic; it represents “a place of identity, of relation and of history” (1995, 52). Ideally, the anthropological place represents a reference point where its inhabitants identify each other as individuals and support strong feelings of community and belonging. The place of birth and the village are good examples of anthropological places since they both deploy a sense of self connected to a localized community. <br><br>Returning to Cloud City, if we were to refer to the Cloud as a place of belonging, its physical dimension of human exclusion zone would contradict the social imprint carried by Augé’s concept of anthropological place. In the book, Augé introduces a new kind of place - the non-place - that exists beyond historical and social connections. If the anthropological place has recognizable and distinct characteristics that support a sense of community, the non-place designates a location of transit; people are connected only through the temporary relations they have with that place. Highways, airports, and supermarkets are examples of such places since their fruition mediates them. <br><br>The non-place is the outcome of supermodernity; an era, Augè believes, that is characterized by an excess of time, space, and individuality. By the excess of time and space, Augè refers to the accumulation of events happening simultaneously to which the individual is exposed. Paradoxically, this saturation and acceleration of history imply an excess of individuality, of solitude the individual experiences as a result of a supermodernity that he witnesses but never takes part. By imposing a contractuality mediated by signs, screens, and text, the non-place creates the illusion of social space through the instructions it imposes on the single subjects and to which the individual has to comply. The individual “obeys the same code as others, receives the same messages, responds to the same entreaties. The space of non-place creates neither singular identity nor relations; only solitude, and similitude.” (ibid., 103) <br><br>From the perspective of a non-place, Cloud City operates under the same politics of isolation, paradoxically aggregating users formally disconnected from each other – alone together. For Augè the person entering the space of a non-place is confronted with his own loneliness. “The only face to be seen, the only voice to be heard, in the silent dialogue he holds with the landscape-text addressed to him along with others, are his own: the face and voice of a solitude made all the more baffling by the fact that it echoes millions of others.”(ibid., 103) The user of the Cloud faces a similar kind of reality: server farms exist only to mediate the actions and relations inside their virtual underbellies Server farms represent a place of passage made up of clicks, scrolls, packets, and protocols to which all users have to obey. <br><br>Our digital selves no longer identify with a physical, anthropological place, but rather are synonymous to the usage of a virtual space. The user consumes virtualization, and as a consumer, he is labeled and fed accordingly by other active systems. We are what we eat (as an interesting note, the word “feed” is already in use by platforms to define custom content, e.g. Twitter feed, Instagram feed). If mass consumption was the consequence of a post-industrial society that thrived on perennial consumerism, the platforms of Cloud City, in their quest to keep the user engaged, manage to accelerate the process of digital consumption to the point of its alienation.<br><br>
+                                
+                                
+                            <div class="container_images">
+                                
+                                <img id="img34.4" src="images/posts/IMG34_4.jpg"  class="img_post_6">
+                                
+                                
+                            <p class="img_text">
+                            
+                            
+                            HOPELESS SITUATIONS. REPETITIVE DIALOGUES. <br>MEANINGLESS ACTIONS. CLICHÉS, WORDPLAY, NONSENSE.<br></p></div>
+                            
+         The essence of the Theater of the Absurd was the result of post-Cold War turmoil and crisis. The cyclicality of Absurdist theater defuses coping mechanisms situated halfway between an empty starting point and an ending point that never brings a conclusion to the play. In Samuel Beckett’s most famous work, “Waiting for Godot’’, Godot never arrives. The characters are trapped in a limbo of waiting. The trauma and anxieties of being caught in a situation where there is no sign of redemption, are twisted by Beckett into simple pleasures:  from Winnie’s routines in “Happy Days” to Krapp’s recorded memoirs in “Krapp’s Last tape”. Their precariousness is disclosed only by autistic actions and streams of consciousness happening within the limits of dark humor and existential crisis. What animates them is an internal code - Beckett’s directions - that manage to exorcise the state of alienation of the characters and to make them relatable. As in Pierre Huyghe’s aforementioned video installation that exposes the internal doings of the two buildings through the lit-up windows, the characters of Beckett are only the containers of something happening within, something that is being exorcised through their behavior.<br><br>
+                                
+                            <div class="container_images">
+                                
+                                <img id="img34.5" src="images/posts/IMG34_5.jpg"  class="img_post_6" >
+                                
+                                
+                            <p class="img_text">
+                            
+                            FUTURISTIC PARIS. STEEL STRUCTURES. CUBICLES. GLASS WINDOWS AND POLISHED INTERIOR DESIGNS. EXTREME URBANISM. THE CITY IS ALIVE.<br></p></div>
+                            
+         Jacques Tati masterfully succeeds in encapsulating the chaos of human nature in his austere, contrasting sets in “Playtime” (1967) by advancing at the same time a veiled critique at the absurdity of the modernity to come. In the movie, the wide gaze of the spectator captures the infinite nuances of the mundane – moving inside and outside spaces. A type of voyeurism facilitated by glass windows, reflections, and transparencies; this continuous observation of people mingling about in these modern environments captures their subtle behaviors. Tati takes advantage of these quirks and defuses comical stances through gags, props, and sound design that tone down the rigidity of the setting. The result is controlled chaos in continual transformation where individual narratives intertwine but never blend. Tati’s characters are not complex, but they are specific enough to stand out.<br><br>
+                                
+                                <div class="container_images">
+                                
+                                <img id="img34.6" src="images/posts/IMG34_6.jpg"  class="img_post_6" >
+                                
+                                
+                            <p class="img_text">
+                            
+                            BECKETT REVISITED<br></p></div>
+                            
+         While they cluster up in different communities, formally speaking, Cloud users remain gated by the sterile infrastructure of the web and its protocols. These self-referential private h/cells further emphasize the state of isolation of living online juxtaposed with the illusion of participation and interaction. <br><br>Remembering Tati’s wide shots in “Playtime,” the intermingling situations that they showcase seem to relate to a bigger, lively community. However, if we were to analyze single elements of these shots, we can see that the actors are only carrying on with their lives, independently of the others. Like Tati’s wide shots, the social sense in Cloud City is not given by interacting and bonding but by actions performed by the actors, taken together and amassed in a single space. <br><br>We can look at Cloud City as a Tati-inspired set design: the characters inhabiting Cloud City are situated between tragedy and humor, cliché and nonsense. Each narrative is the distilled result of accumulating and juxtaposing language and actions coming from different content creators to present the bleak reality of their lives behind cameras and microphones. Decontextualized and bare of any form of interaction from an audience, dialogues become monologues, and questions remain unanswered. Trapped forever in a limbo of waiting, their actions cannot anticipate liberation nor death, as data lives forever. Laughing online while being on fire, death, illness, and loneliness are used figuratively to diffuse small bursts of self-irony that end up being reset by virtual attention spans. The need to justify one’s existence is washed up by the streams of information and the latest trends, while the character has no other choice than to return to the routine that keeps her living. <br><br>Both Beckett and Tati manage to build up austere environments in which characters seem trapped rather than alive. Looking at the vignettes above, we can identify a similar kind of spatiality, a theatrical setup from which characters willingly seem to be detached. In Beckett, the theatrical scenery usually evokes a reality that has been affected by war and in which death and desolation play integral parts. Nature is barren; rooms feel empty and cold. In Tatì’s “Playtime”, casual social situations are contrasted by Modernism architecture and its repetitive modular forms. The rejection of all ornament and color, the use of flat and reflective surfaces promote the disorientation of the characters. <br><br>In the Cloud we find a similar scenery. The line between real life and stage acting gets blurred. Content creators preach authenticity and realness in front of the camera, sometimes making acting and living coincide. Users are going on with their everyday lives, squared up by their social accounts, cubicle style. Social networking platforms create an online culture through content-filled layouts, thumbnails, and infinite feeds, a big part of which are stored in the Cloud itself. In an attempt to keep up with everything that happens simultaneously around them, users frantically keep scrolling, binge-watching, subscribing, consuming. <br><br>By quantifying clicks and taps, social platforms managed to build specific social situations. Likes, shares, and views create hierarchies, followings, and communities within social platforms. Alone together, these islands sustain simultaneous areas of solitude, bringing forward content-based parasocial spaces where a sense of belonging is deployed through common entertainment and interests. User-generated materials such as photos, text posts, and video blogs are the backbone of these virtual communities. From the interactions happening inside these communities new kinds of identities emerge, created through feedback, likes, shares, and comments “down below.” Phenomena such as beauty influencers, podcast commentators, and gaming streamers suggest creating specific personalities - archetypes rooted in the collective unconscious of different online communities. These personalities thrive on feedback; they are built bottom-up by an audience that follows, engages, and ultimately looks up to them. The online personalities are trapped in a feedback loop of creating content and awaiting to be fed-back by an unknown audience that caters to their egos. <br><br>Just as Beckett’s characters, this internalized feedback loop keeps them engaged. And just as Tati’s characters, they do not exhibit any layer of introspection: they stand out through a mix of personal flair and rhetoric capabilities. Any attempt to give meaning to their online existence or any glimpse of existential questioning fall victim to short attention spans and the constant effort to relate and react to something (trends and hashtags). If we were to take down these strategies of engagement or separate the content from the interaction and feedback requests, we would remain with people talking to themselves, journals, monologues, and photo albums: tokens of loneliness, failed pursuits of relevance, and fear of missing out.<br><br>While Beckett’s characters go on with their lives, death always lurks in the background - as a prop. In Cloud City, death becomes a meme. Dark humor, externalized self-loathing, and personal low-points are ultimately used as comic relief. This project does not go into the direction of meme-culture because it would add another layer of metaphors that may further complicate its reading. There are, however, moments of tension and digression in the character’s vignettes, but they are voluntarily concealed in the flow of each narration. The punchline is that in Cloud City, users live forever, archived, cataloged, and sequenced in a limbo of metadata and cache. There is no “sweet release of death.”<br><br>
+                            
+                            (to be continued)
+                            
+                            <br><br><br>
+                                <span style="font-size: 0.8em;">
+                                REFERENCES
+                                <br>
+                                <b>Augé</b>, M. (1995). <i>Non-Places: Introduction to an Anthropology of Supermodernity.</i> Verso Books. 
+                                <br>
+                                    
+                                <b>Bergson</b>, H. (1900). <i>Laughter: An Essay on the Meaning of the Comic.</i> Temple of Earth Publishing.
+                                <br>
+                                    
+                                <b>Felsk</b>, R. (2015). <i>The Limits of Critique.</i> The University of Chicago Press.
+                                <br>
+                                    
+                                <b>Sinclair</b>, M. (2020). <i>Bergson.</i> Routledge Press. 
+
+                                <br>
+                                    
+                                    <br><br>
+                                    
+                                    
+                            IMAGES<br>
+                                Bird illustrations by Jacques Barraband. All illustrations are royalty free and from the public domain. 
+                                
+                                
+                            </span>
+                    
+<br><br><br>
+                              
+                              
+                            <hr noshade="noshade" style="height: 0.1vh; width:18vw; border-width:0; background-color: black; color: black; text-align:left;margin-left:0">
+
+                            <span style=" "><a class="hyperlinks" style="color: black;" href="http://iuliaradu.me/" target="_blank">Iulia Radu</a> is a graphic designer and writer. Her work is situated within the boundaries of speculative design and fiction. By conceiving new imaginaries through practice-based artistic research, she puts forward speculative ecologies that can be explored through storytelling and design. She is currently working on her thesis for a MA in Digital Media at HFK Bremen. </span>
+                            
+                        </div>
+
                     </div>
                     
-                    <div id="preview_post_5">
-                        <div class="preview_text">
-                            
-                            <span style="margin-bottom: 5vh;line-height: 120%; padding-left: 7%; "><span id="preview_text_name">Sofia Noronha </span><br> The Death of Venus</span>
-                            
-                        </div>
-                    </div>
-                    <div id="preview_post_6">
-                        <div class="preview_text">
-                        
-                        <span style="margin-bottom: 5vh;line-height: 120%; padding-left: 7%; "><span id="preview_text_name">Giulia Fagundes</span><br> How Long?</span></div>
-                    </div>
-                    <div id="preview_post_7">
-                        <div class="preview_text">
-                        
-                        <span style="margin-bottom: 5vh;line-height: 120%;  padding-left: 7%;"><span id="preview_text_name">Ana Pina</span><br> Conga</span></div>
-                    </div>
-                    <div id="preview_post_8">
-                        <div class="preview_text">
-                        <span style="margin-bottom: 5vh;line-height: 120%; padding-left: 7%;"><span id="preview_text_name">Fernando Mendes</span><br> The Great Fitinha</span></div>
-                    </div>
-                </div>
+                    <div id="filler"></div>
+                    
+                    
+                </div>     
             </div>
+            
         </div>
+        <div class="content" id="content_2" >
+            <div id="parts">
+            <div class="out">OUT NEXT WEDNESDAY<br><br><br><span style="font-size: 2.5vh; font-family: 'NHaasGrotesk-Roman';">Iulia Radu<br>Filipa Raimundo Combo<br>Ada Popovic<br>Andrea (nddr3)</span></div>
+            <div id="part_1">PART 1</div>
+            <div id="part_2">PART 2</div> <br><br>
+            
+            </div>
+            <div id="background_2" style="background-image:url(images/issues/dsublimeb.jpg); opacity: 100%;">
+            </div>
+            
+            <div id="left_side2">
 
 
-        <div id="blue_bar" style="background-color: #4c4d4c;">
-            <div class="subtitle_m" style="font-size: 3.5vh; margin-top: 1.5vh;"><span>A REGULAR PRACTICE</span></div>
+                <div class="menu_posts">
+
+                  
+                </div>
+
+            </div>
+                   
+
         </div>
         
-        <div id="right_side_5" style="background-color: #4c4d4c;">
+
+
+        <div id="blue_bar" style="background-color: rgb(254, 59, 0);">
+            <div class="subtitle_m" style="font-size: 3.5vh; margin-top: 1.5vh;"><span>THE DIGITAL SUBLIME</span></div>
+        </div>
+        <div id="right_side" style="background-color: rgb(254, 59, 0);">
                 
                 
             <div class="header_m">
                 <div class="subtitle_buttons_m">
-                   <a id="close_bar"><div class="subtitle_m" style="font-size: 3.5vh; margin-top: 1.5vh;"><span>A REGULAR PRACTICE</span></div></a>
+                   <a id="close_bar"><div class="subtitle_m" style="font-size: 3.3vh; margin-top: 1vh; margin-bottom: 5vh;"><span>THE DIGITAL SUBLIME</span></div></a>
                     <div class="buttons_m">
                         <a class="editorial_button_m"><span>editorial</span></a>
                         <a class="about_button_m"><span>about</span></a>
@@ -604,15 +475,11 @@ She is one of the most special people in my life and I love her dearly. I hope o
                 </div>
             </div>
         
-                <div id="editorial" style="display: none">
-                    <p>The claim for visibility and equality raised by the latest uproar of Black Lives Matter worldwide as well as the struggle for civil rights for the LGBTQ+ community is no novelty. However, as we have witnessed recently, much of the socio-political fragilities present prior to COVID have been magnified in our current time. In the light of systemic and racial inequalities, as well as the passing of conservative and backward laws amidst pride month, we as a collective decided to open our platform to the dissemination and sharing of indigenous, black and LGBTQ+ experiences.</p>
-                    
-                    <p>Since the release of Rife magazine in April, amidst the spread of coronavirus worldwide, we've worked on creating content that would question our new reality and the status-quo from various angles, whether humoristic, personal or political. And during the past three months we have been working towards making Rife more inclusive, aiming to reach beyond the format of guest contributors—and the importance of inclusivity right now seems more latent than ever faced with the current global socio-political scenario. </p>
-                    
-                    <p>This fifth issue thus rises from an open call to indigenous, black and LGBTQ+ creatives from all fields that have something to share about their experiences, stories, realities and heritages. By consciously tackling algorithms and reaching out to a more diverse range of creatives and contents, a new practice has deliberately begun, one we wish to call regular, looking into the future. May this only be the beginning. </p>
-                    
-                    <p>Thank you to our community of friends and creatives for sharing our call, and a special thank you to the platforms <a class="hyperlinks" style="color: black;" href="http://collide24.org/" target="_blank">Collide 24</a>, <a class="hyperlinks" style="color: black;" href="http://instagram.com/wherearetheblackdesigners/" target="_blank">wherearetheblackdesigners</a> and <a class="hyperlinks" style="color: black;" href="http://prete-indigena.club/" target="_blank">Prete-indígena.club</a>. It is through supporting networks like this that we are able to reach beyond in order to create something new. </p>
-                    
+                <div id="editorial">
+                    <p>The term “Cloud" bears a metaphor of something which is intangible and untouchable, which floats above us and is both omnipresent and omniscient. At the same time, it also stands as a contrast to materiality itself (hard drives, cables, hardware) and contains an ideal of endless grandioseness, where its bounding limits are unclear. Much like a fantasy—or even a fiction, if you will—the Cloud allows us to hide aspects of our digital cultural memory embedded in material reality. In such a way, the cloud carries a sublimity which compares it to the imagined, a dream, revealing an ethereal realm which is both a mirror of reality and a departure from it.</p>
+                    <p>So what divides the physical world from the digital sublime? Here we mean sublime in terms of an uncanny experience, overwhelming and unfathomable, as well as in an ironic sense. How does the cloud affect us irl and what is our relation to it? Dwelling between on-demand resource and the depletion of natural resources, between the ephemerality of documents and the eternity of data storage and digital debris—if you pay the price—, its computing power provides a new paradigm to our virtual daily lives and the way we operate. By connecting various pieces of a greater puzzle, the Cloud remains a footprint of our digital existence.
+</p>
+                    <p>Delving into the various approaches to the Cloud, <i>The Digital Sublime</i> is divided into two parts. In its first part, Chiara Kristler brings insight into what separates the digital and the real world by questioning artificial intelligence and bots; Francisca Roseiro and Margarida Morais speculate on the phenomenological mechanics of The Cloud Cycle; Léo Raphael expands on the large-scale consequences of the cloud through an eight-part system; and Iulia Radu, featured in two moments, takes on the concept of birdwatching in the digital stage. In the second release of this issue, Filipa Combo explores our technologic existence in different realms; Ada Popovic proposes the appropriation of the territory of the Cloud as a forum for discussion; and Andrea Badia creates a digital funeral rave of her own designer persona.</p>
                     <p>Hiatus Collective.</p><br><br><br>
 
                 </div>
@@ -620,18 +487,17 @@ She is one of the most special people in my life and I love her dearly. I hope o
                     <p>Notions of time and space are altered. A disease spanned the globe, and its consequences are unprecedented. We are witnesses to a Global Pandemic crisis. Putting on hold the debate on borders as a physical and geographic limit and its implying crises of identity and conflict, countries turned to fences and walls as a means to mitigate an inescapable quandary common to all worldwide. It is no novelty that millennials and Gen Z are characterised by distancing and alienation, but the new order imposed by the pandemic has imposed a revival of the "bedroom generation" in the post-digital era. Everything is reduced to the display screen and the simulated reality within it.</p>
                     <p>A digital magazine entitled RIFE&mdash;initially created within the discipline of Editorial Design in the MA of Communication Design at the Fine-Arts Faculty of Lisbon&mdash;emerged as a response to the pandemic condition and its global effects on the individual, social, political, ambiental and cultural levels, raising questions surrounding what we know as our reality at this day in age. These questions are made and answered by designers, now being opened to a greater spectrum of creatives. This is pertinent as we creatives operate within our contexts, and in order to render ethical alternatives to realities presented, we must investigate and understand them. At the moment we were quarantined, we were physically inhibited to circulate freely, so we turned to question how to circulate content digitally&mdash;not by option but by necessity&mdash;, thus revealing a doorway to cultural production in the digital world and simultaneously embracing the democratic distribution of the open source medium that is the internet.</p><br>
                     
-<p><span style="font-family:'NHaasGrotesk-Medium';">RIFE Magazine — Issue 5, A Regular Practice</span></p>
+<p><span style="font-family:'NHaasGrotesk-Medium';">RIFE Magazine — Issue 6, The Digital Sublime</span></p>
                     
 <p><span style="font-family:'NHaasGrotesk-Medium';">Collaborators</span><br>
-<span style="font-family:'NHaasGrotesk-Roman';">Amanda Ponce</span><br>
-<span style="font-family:'NHaasGrotesk-Roman';">Ana Pina
+<span style="font-family:'NHaasGrotesk-Roman';">Ada Popovic</span><br>
+<span style="font-family:'NHaasGrotesk-Roman';">Andrea (nddr3)
 </span><br>
-<span style="font-family:'NHaasGrotesk-Roman';">FONTE (collective)</span><br>
-                    <span style="font-family:'NHaasGrotesk-Roman';">Fernando Mendes</span><br>
-                    <span style="font-family:'NHaasGrotesk-Roman';">Giulia Fagundes</span><br>
-                    <span style="font-family:'NHaasGrotesk-Roman';">Laura Calado</span><br>
-                    <span style="font-family:'NHaasGrotesk-Roman';">Lince Rebelo</span><br>
-                    <span style="font-family:'NHaasGrotesk-Roman';">Sofia Noronha</span></p>                    
+<span style="font-family:'NHaasGrotesk-Roman';">Chiara Kristler</span><br>
+                    <span style="font-family:'NHaasGrotesk-Roman';">Filipa Raimundo Combo</span><br>
+                    <span style="font-family:'NHaasGrotesk-Roman';">Francisca Roseiro & Margarida Morais</span><br>
+                    <span style="font-family:'NHaasGrotesk-Roman';">Iulia Radu</span><br>
+                    <span style="font-family:'NHaasGrotesk-Roman';">Léo Raphäel</span></p>                    
 
 <p><span style="font-family:'NHaasGrotesk-Medium';">Social Media Management</span><br>
 <span style="font-family:'NHaasGrotesk-Roman';">Beatriz Pinta&nbsp;</span><br>
@@ -646,14 +512,13 @@ She is one of the most special people in my life and I love her dearly. I hope o
 <p><span style="font-family:'NHaasGrotesk-Medium';">Creative Directors</span><br>
 <span style="font-family:'NHaasGrotesk-Roman';">HIATUS COLLECTIVE</span></p>                    
  
-<p><span style="font-family:'NHaasGrotesk-Medium';">Editing and Contents</span><br>
+<p><span style="font-family:'NHaasGrotesk-Medium';">Editing</span><br>
 <span style="font-family:'NHaasGrotesk-Roman';">HIATUS COLLECTIVE</span></p>                    
                     
 
 
 
-<p><span style="font-family:'NHaasGrotesk-Medium';">Copy Editor</span><br>
-<span style="font-family:'NHaasGrotesk-Roman';">Beatriz Pinta</span></p>
+
 
 <p><span style="font-family:'NHaasGrotesk-Medium';">Webdesign</span><br>
 <span style="font-family:'NHaasGrotesk-Roman';">HIATUS COLLECTIVE</span></p>
@@ -662,6 +527,7 @@ She is one of the most special people in my life and I love her dearly. I hope o
 <span style="font-family:'NHaasGrotesk-Roman';">Manuel Silva</span></p>
 
 <p><span style="font-family:'NHaasGrotesk-Medium';">Development Support</span><br>
+<span style="font-family:'NHaasGrotesk-Roman';">Gil Silva</span><br>
 <span style="font-family:'NHaasGrotesk-Roman';">Rui Sampaio</span></p>
 
 
@@ -669,24 +535,25 @@ She is one of the most special people in my life and I love her dearly. I hope o
 <p><span style="font-family:'NHaasGrotesk-Medium';">DISCLAIMER</span><br>
 <span style="font-family:'NHaasGrotesk-Roman';">Collective HIATUS does not assume responsibility for the accuracy of all information. Reproduction of whole or in part of the published contents requires written permission from HIATUS.<br><br><i>RIFE Magazine</i> believes in freedom of speech and thought thus, it does not exercise censorship on its contributors. Signed contributors do not necessarily represent the opinion of the collective HIATUS.</span></p>
 
-<p><span style="font-family:'NHaasGrotesk-Roman';">&copy; 2020</span></p><br><br><br>
+<p><span style="font-family:'NHaasGrotesk-Roman';">&copy; 2021</span></p><br><br><br>
                     
                 </div>
                 
-            </div>
+        </div>
          
         
-        </div>
+        
 
         
-       <div id="hiatus" style="width: 6vw; height: 17vh; opacity: 0.99; right: 0%; bottom: 0%; position: fixed; z-index: 3;">
+       <div id="hiatus">
             <img src="images/logos/hiatuslogo.png" class="hiatus">
        </div>
 
        <div id="about_us_logo">
 
             <div id="contact_links">
-            <span>
+            
+                <span>
                     <a id="close_about"><span><b>&times;</b></span></a>
                     <a class="email" href="mailto:collective.hiatus@gmail.com" style="margin-left:2vw; font-size: 3vh;">EMAIL</a><br>
                     <a class="email" href="https://www.instagram.com/collective.hiatus" target="_blank" style="margin-left: 2vw; font-size: 3vh;">INSTAGRAM</a>
@@ -696,24 +563,31 @@ She is one of the most special people in my life and I love her dearly. I hope o
                         Manuel Silva<br>
                         N&aacute;dia Alexandre<br>
                         Sofia Cavaquinho</p>
-                    <!-- <div id="image_about"></div> -->
-            </span>
-            <img src="images/logos/hiatuslogo.png" class="hiatus">
-         </div>
+                    
+                </span>
+
+            </div>
 
           <div id="about_text">
             <p class="about_text">We are HIATUS, a collective made of five designers based in Portugal moved by the contingency of contexts. We felt the urge to know how the scenario of the global pandemic could help us define ourselves as designers by questioning what it is to partake in cultural production in a framework where remote connections were imperative and conventional sources of inspiration had been hindered. We also wanted to investigate the phenomenon itself, through its rationalization in an attempt to define what kind of society we live in&mdash;not only currently but also looking forward from this experience.<br><br>
             Hence, our approach is founded on the perception that the effects of this historic period we are living are not primarily a burden, but a terrain in which new ways of thinking and producing may come to light. Using design and our knowledge to stimulate discussion as we believe our responsibility is, we aim to raise questions about realities, cultural decisions, ethical and political actions, exploring new practices and emerging technologies inside and outside design.<br><br>
-            The name of the collective came about as a reflexion on the condition we were forced into. As graphic designers, and most importantly as creatives, are few of the least affected in our daily production by working remotely due to the digitalization of our tools. However, as the pandemic unfolds, regular daily operations were put on hold, indefinitely. And so did we. HIATUS in its definition&mdash;a break in continuity in a sequence or activity&mdash;represents the temporal space in which we came together as a collective in an attempt to counter the silence of being put dormant, thus rendering the collective as a productive force in idle times and the coming period of adaptation into the unknown.<br><br>
-         </div>
+                The name of the collective came about as a reflexion on the condition we were forced into. As graphic designers, and most importantly as creatives, are few of the least affected in our daily production by working remotely due to the digitalization of our tools. However, as the pandemic unfolds, regular daily operations were put on hold, indefinitely. And so did we. HIATUS in its definition&mdash;a break in continuity in a sequence or activity&mdash;represents the temporal space in which we came together as a collective in an attempt to counter the silence of being put dormant, thus rendering the collective as a productive force in idle times and the coming period of adaptation into the unknown.</p><br><br>
+          </div>
 
-         <img src="images/logos/hiatuslogo.png" class="hiatus" id="hiatus_about_mobile">
 
-        </div>
+
+       </div>
         
         <script rel="stylesheet" src="jquery-3.3.1.js"></script>
         <script rel="stylesheet" src="buttons.js"></script>
-        <script rel="stylesheet" src="issue5_gallery.js"></script>
+        <script rel="stylesheet" src="issue6_gallery.js"></script>
+        
+        <script>
+            window.addEventListener("load", () => setPageBottom('content_2', 0.07, 0.18));
+            window.addEventListener("resize", () => setPageBottom('content_2', 0.07, 0.18));
+            document.getElementById("menu_back").addEventListener("click", () => setPageBottom('content_2', 0.07, 0.18))
+            
+        </script>
     
         
     </body>
