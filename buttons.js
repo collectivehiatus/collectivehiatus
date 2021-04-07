@@ -2,7 +2,14 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
-//----------------------------java para desktop----------------------------------//
+function setPageBottom(id, percentagemDesktop, percentagemMobile) {
+    document.getElementById(id).style.bottom =-(document.getElementById(id).offsetHeight
+                        - ((window.innerWidth <= 1023) ? percentagemMobile : percentagemDesktop)
+                        * window.innerHeight)+"px";
+
+               }
+
+//----------------------------codigo para desktop----------------------------------//
 
 var mq = window.matchMedia( "(min-width: 1024px)" );
 if (mq.matches) {
@@ -31,14 +38,17 @@ $(document).ready(function() {
 
 $('.post_1_subtitle_guest_m').css('display', 'none')
 
-//clicar no about us
+//clicar e fechar no about us
+function* toggleAboutUs() {
+  while (true) {
+    yield () => $('#about_us_logo').css('display', 'block');
+    yield () => $('#about_us_logo').css('display', 'none');
+  }
+}
+const toggleAboutUsGen = toggleAboutUs();
 $('#hiatus').click(
-                function(){
-                    $('#about_us_logo').css('display', 'table')
-                }, 
-               
-
-);
+                () => toggleAboutUsGen.next().value()
+                ,);
 
 //clicar no close about us
 $('#close_about').click(
@@ -158,8 +168,11 @@ $('.back').click(
                     $(window).scrollTop(0);
                     $('#right_side').css('marginLeft', '60%')
                     $('#right_side').css('width', '40vw')
+                    $('#left_side').css('display', 'flex')
                     $('#left_side').css('width', '60%')
+                    
                     $('#background').css('width', '60%')
+                    
                     $('#arrow').css('display', 'block')
                     $('.menu_posts_guest').css('margin-top', '86vh')
                     $('.menu_posts_guest4').css('margin-top', '64vh')
@@ -170,13 +183,40 @@ $('.back').click(
                     $('#post_4_content').css('display', 'none')
                     $('#post_5_content').css('display', 'none')
                     $('#post_6_content').css('display', 'none')
+                    $('#post_7_content').css('display', 'none')
+                    $('#post_8_content').css('display', 'none')
+                    $('#post_1_B_content').css('display', 'none')
+                     $('#post_2_B_content').css('display', 'none')
+                    $('#post_3_B_content').css('display', 'none')
+                    $('#post_4_B_content').css('display', 'none')
+                    
+                    
                     $('#post_1').css('display', 'block')
                     $('#post_2').css('display', 'block')
                     $('#post_3').css('display', 'block')
                     $('#post_4').css('display', 'block')
                     $('#post_5').css('display', 'block')
                     $('#post_6').css('display', 'block')
+                    $('#post_7').css('display', 'block')
+                    $('#post_8').css('display', 'block')
+                    
+                    $('#post_1_B').css('display', 'block')
+                    $('#post_2_B').css('display', 'block')
+                    $('#post_3_B').css('display', 'block')
+                    $('#post_4_B').css('display', 'block')
+                    $('#background_2').css('transition', '1s')
+                    $('#content_2').css('display', 'flex')
+                    
+                    $('#left_side2').css('display', 'flex')
+                    $('#left_side2').css('width', '60%')
+                    $('#background_2').css('width', '60%')
+                    $('#background_2').css('height', '100%')
+                    
+                    $('#filler').css('display', 'block')
+                    $('#parts').css('display', 'flex')
+                    
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 0)')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 0)')
                     
                     $('#menu_issues').css('display', 'block')
                     $('#menu_back').css('display', 'none')
@@ -187,12 +227,20 @@ $('.back').click(
                     $('#post_4_link').css('width', '80%')
                     $('#post_5_link').css('width', '80%')
                     $('#post_6_link').css('width', '80%')
+                    $('#post_7_link').css('width', '80%')
+                    $('#post_8_link').css('width', '80%')
+                    
+                    $('#post_1_B_link').css('width', '80%')
+                    $('#post_2_B_link').css('width', '80%')
+                    $('#post_3_B_link').css('width', '80%')
+                    $('#post_4_B_link').css('width', '80%')
                     
                     $('#editorial_button').css('display', 'flex')
                     $('#about_button').css('display', 'flex')
                     $('#editorial_button_2').css('display', 'none')
                     $('#about_button_2').css('display', 'none')
                     $('#close_button').css('display', 'none')
+                    $('#editorial').css('display', 'flex')
                     
 //                    textos bilingues
                     $('.post_1_link_2').css('display', 'none')
@@ -201,6 +249,8 @@ $('.back').click(
                     $('#text_eng_link').css('font-family', 'NHaasGrotesk-Medium')
                     $('#text_pt').css('display', 'none')
                     $('#text_eng').css('display', 'block')
+                    
+                    
                     
                     $(function() {
                         $('.title_date_1').hover(function() {
@@ -437,6 +487,20 @@ $('.back').click(
 
                     $(function() {
                         $('.title_date_6').hover(function() {
+                            $('.glow_1_6').css('color', 'black');
+                            $('.glow_1_6').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_1_6').css('-webkit-stroke-color', '#000000');
+                            $('.glow_1_6').css('-webkit-fill-color', '#000000');
+                            $('.glow_1_6').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_1_6').css('cursor', 'pointer');
+
+                            $('.glow_2_6').css('color', 'black');
+                            $('.glow_2_6').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_2_6').css('-webkit-stroke-color', '#000000');
+                            $('.glow_2_6').css('-webkit-fill-color', '#000000');
+                            $('.glow_2_6').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_2_6').css('cursor', 'pointer');
+
                             $('.glow_3_6').css('color', 'black');
                             $('.glow_3_6').css('-webkit-stroke-width', '3.75vmax');
                             $('.glow_3_6').css('-webkit-stroke-color', '#000000');
@@ -445,6 +509,20 @@ $('.back').click(
                             $('.glow_3_6').css('cursor', 'pointer');
 
                         }, function() {
+                            $('.glow_1_6').css('color', 'black');
+                            $('.glow_1_6').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_1_6').css('-webkit-stroke-color', '#000000');
+                            $('.glow_1_6').css('-webkit-fill-color', '#000000');
+                            $('.glow_1_6').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_1_6').css('cursor', 'pointer');
+
+                            $('.glow_2_6').css('color', 'black');
+                            $('.glow_2_6').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_2_6').css('-webkit-stroke-color', '#000000');
+                            $('.glow_2_6').css('-webkit-fill-color', '#000000');
+                            $('.glow_2_6').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_2_6').css('cursor', 'pointer');
+
                             $('.glow_3_6').css('color', 'black');
                             $('.glow_3_6').css('-webkit-stroke-width', '0vmax');
                             $('.glow_3_6').css('-webkit-stroke-color', '#000000');
@@ -452,7 +530,115 @@ $('.back').click(
                             $('.glow_3_6').css('text-shadow', '0px 0px 0px #000000');
                             $('.glow_3_6').css('cursor', 'pointer');
                         })
-                    });                     
+                    });
+                    $(function() {
+                        $('.title_date_7').hover(function() {
+                            $('.glow_1_7').css('color', 'black');
+                            $('.glow_1_7').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_1_7').css('-webkit-stroke-color', '#000000');
+                            $('.glow_1_7').css('-webkit-fill-color', '#000000');
+                            $('.glow_1_7').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_1_7').css('cursor', 'pointer');
+
+                            $('.glow_2_7').css('color', 'black');
+                            $('.glow_2_7').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_2_7').css('-webkit-stroke-color', '#000000');
+                            $('.glow_2_7').css('-webkit-fill-color', '#000000');
+                            $('.glow_2_7').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_2_7').css('cursor', 'pointer');
+
+                            $('.glow_3_7').css('color', 'black');
+                            $('.glow_3_7').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_3_7').css('-webkit-stroke-color', '#000000');
+                            $('.glow_3_7').css('-webkit-fill-color', '#000000');
+                            $('.glow_3_7').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_3_7').css('cursor', 'pointer');
+
+                        }, function() {
+                            $('.glow_1_7').css('color', 'black');
+                            $('.glow_1_7').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_1_7').css('-webkit-stroke-color', '#000000');
+                            $('.glow_1_7').css('-webkit-fill-color', '#000000');
+                            $('.glow_1_7').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_1_7').css('cursor', 'pointer');
+
+                            $('.glow_2_7').css('color', 'black');
+                            $('.glow_2_7').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_2_7').css('-webkit-stroke-color', '#000000');
+                            $('.glow_2_7').css('-webkit-fill-color', '#000000');
+                            $('.glow_2_7').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_2_7').css('cursor', 'pointer');
+
+                            $('.glow_3_7').css('color', 'black');
+                            $('.glow_3_7').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_3_7').css('-webkit-stroke-color', '#000000');
+                            $('.glow_3_7').css('-webkit-fill-color', '#000000');
+                            $('.glow_3_7').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_3_7').css('cursor', 'pointer');
+                        })
+                    });
+                    $(function() {
+                        $('.title_date_8').hover(function() {
+                            $('.glow_1_8').css('color', 'black');
+                            $('.glow_1_8').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_1_8').css('-webkit-stroke-color', '#000000');
+                            $('.glow_1_8').css('-webkit-fill-color', '#000000');
+                            $('.glow_1_8').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_1_8').css('cursor', 'pointer');
+
+                            $('.glow_2_8').css('color', 'black');
+                            $('.glow_2_8').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_2_8').css('-webkit-stroke-color', '#000000');
+                            $('.glow_2_8').css('-webkit-fill-color', '#000000');
+                            $('.glow_2_8').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_2_8').css('cursor', 'pointer');
+
+                            $('.glow_3_8').css('color', 'black');
+                            $('.glow_3_8').css('-webkit-stroke-width', '3.75vmax');
+                            $('.glow_3_8').css('-webkit-stroke-color', '#000000');
+                            $('.glow_3_8').css('-webkit-fill-color', '#000000');
+                            $('.glow_3_8').css('text-shadow', '0px 0px 10px #000000');
+                            $('.glow_3_8').css('cursor', 'pointer');
+
+                        }, function() {
+                            $('.glow_1_8').css('color', 'black');
+                            $('.glow_1_8').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_1_8').css('-webkit-stroke-color', '#000000');
+                            $('.glow_1_8').css('-webkit-fill-color', '#000000');
+                            $('.glow_1_8').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_1_8').css('cursor', 'pointer');
+
+                            $('.glow_2_8').css('color', 'black');
+                            $('.glow_2_8').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_2_8').css('-webkit-stroke-color', '#000000');
+                            $('.glow_2_8').css('-webkit-fill-color', '#000000');
+                            $('.glow_2_8').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_2_8').css('cursor', 'pointer');
+
+                            $('.glow_3_8').css('color', 'black');
+                            $('.glow_3_8').css('-webkit-stroke-width', '0vmax');
+                            $('.glow_3_8').css('-webkit-stroke-color', '#000000');
+                            $('.glow_3_8').css('-webkit-fill-color', '#000000');
+                            $('.glow_3_8').css('text-shadow', '0px 0px 0px #000000');
+                            $('.glow_3_8').css('cursor', 'pointer');
+                        })
+                        
+                        
+                        function setPageBottom(id, percentagemDesktop, percentagemMobile) {{
+                document.getElementById(id).style.bottom =
+                    -(document.getElementById(id).offsetHeight
+                        - ((window.innerWidth <= 1023) ? percentagemMobile : percentagemDesktop)
+                        * window.innerHeight)+"px"
+
+               }
+            setPageBottom('content_2', 0.07, 0.22);
+            window.addEventListener("resize", () => setPageBottom('content_2', 0.07, 0.22));}
+                        
+                        
+                        
+                        
+                    });
+                    
                     
                 },             
 );
@@ -463,15 +649,21 @@ $('.back').click(
 $('#post_1_link').click(
                 function(){
                     $(window).scrollTop(0);
+                    
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
                     $('#left_side').css('width', '100%')
+                    
                     $('#background').css('width', '100%')
+                    
                     
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
                     
-                    $('#post_1_content').css('display', 'block')
+                    
+                    
+                   $('#post_1_content').css('display', 'block')
                     $('#arrow').css('display', 'none')
+                    
                     $('.menu_posts_guest').css('margin-top', '32vh')
                     $('.menu_posts_guest4').css('margin-top', '32vh')
                     $('#post_2').css('display', 'none')
@@ -479,6 +671,8 @@ $('#post_1_link').click(
                     $('#post_4').css('display', 'none')
                     $('#post_5').css('display', 'none')
                     $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
                     
                     $('#menu_issues').css('display', 'none')
                     $('#menu_back').css('display', 'block')
@@ -490,6 +684,13 @@ $('#post_1_link').click(
                     $('#editorial_button_2').css('display', 'flex')
                     $('#about_button_2').css('display', 'flex')
                     $('#close_button').css('display', 'none')
+                    
+                    
+                    $('#left_side2').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
                     
                     $('.glow_1_1').css('color', 'black')
                     $('.glow_1_1').css('textDecoration', 'none')
@@ -528,9 +729,11 @@ $('#post_1_link').click(
                     $('#left_side').css('width', '100%')
                     $('#background').css('width', '100%')
                     
+                   
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
                     
                     $('#post_2_content').css('display', 'block')
+                    
                     $('.menu_posts_guest').css('margin-top', '32vh')
                     $('.menu_posts_guest4').css('margin-top', '32vh')
                     $('#post_1').css('display', 'none')
@@ -549,6 +752,14 @@ $('#post_1_link').click(
                     $('#editorial_button_2').css('display', 'flex')
                     $('#about_button_2').css('display', 'flex')
                     $('#close_button').css('display', 'none')
+                    
+                    
+                    $('#left_side2').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
                     
                     $('.glow_1_2').css('color', 'black')
                     $('.glow_1_2').css('textDecoration', 'none')
@@ -588,6 +799,7 @@ $('#post_1_link').click(
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
                     
                     $('#post_3_content').css('display', 'block')
+                    
                     $('.menu_posts_guest').css('margin-top', '32vh')
                     $('.menu_posts_guest4').css('margin-top', '32vh')
                     $('#post_1').css('display', 'none')
@@ -606,6 +818,13 @@ $('#post_1_link').click(
                     $('#editorial_button_2').css('display', 'flex')
                     $('#about_button_2').css('display', 'flex')
                     $('#close_button').css('display', 'none')
+                    
+                    $('#left_side2').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
                     
                     $('.glow_1_3').css('color', 'black')
                     $('.glow_1_3').css('textDecoration', 'none')
@@ -666,6 +885,12 @@ $('#post_1_link').click(
                     $('#about_button_2').css('display', 'flex')
                     $('#close_button').css('display', 'none')
                     
+                    $('#left_side2').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
                     $('.glow_1_4').css('color', 'black')
                     $('.glow_1_4').css('textDecoration', 'none')
                     $('.glow_1_4').css('-webkit-stroke-width', '0')
@@ -698,9 +923,11 @@ $('#post_1_link').click(
                     $('#right_side').css('marginLeft', '100%')
                     $('#right_side').css('width', '0vw')
                     $('#left_side').css('width', '100%')
+                    
                     $('#background').css('width', '100%')
                     
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
                     
                     $('#post_5_content').css('display', 'block')
                     $('.menu_posts_guest').css('margin-top', '32vh')
@@ -710,6 +937,8 @@ $('#post_1_link').click(
                     $('#post_3').css('display', 'none')
                     $('#post_4').css('display', 'none')
                     $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
                     
                     $('#menu_issues').css('display', 'none')
                     $('#menu_back').css('display', 'block')
@@ -790,6 +1019,330 @@ $('#post_1_link').click(
                      
                 },             
  );
+    
+    
+// PARA ABRIR POST DO MENU B
+    
+//para  abrir primeiro post B
+
+$('#post_1_B_link').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#right_side').css('marginLeft', '100%')
+                    $('#right_side').css('width', '0vw')
+                    $('#left_side').css('width', '100%')
+                    $('#left_side2').css('width', '100%')
+                    $('#background').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#background_2').css('height', '100vh')
+                    $('#background_2').css('transition', '0s')
+                    
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    
+                   $('#post_1_B_content').css('display', 'block')
+                   
+                    $('#arrow').css('display', 'none')
+                    $('#left_side').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
+                    $('#parts').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#post_2_B').css('display', 'none')
+                    $('#post_3_B').css('display', 'none')
+                    $('#post_4_B').css('display', 'none')
+                    
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_1_B_link').css('width', '60%')
+                    
+                    $('#editorial_button').css('display', 'none')
+                    $('#about_button').css('display', 'none')
+                    $('#editorial_button_2').css('display', 'flex')
+                    $('#about_button_2').css('display', 'flex')
+                    $('#close_button').css('display', 'none')
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                     
+                },             
+ );
+    
+    
+//para  abrir segundo post B
+
+$('#post_2_B_link').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#right_side').css('marginLeft', '100%')
+                    $('#right_side').css('width', '0vw')
+                    $('#left_side').css('width', '100%')
+                    $('#left_side2').css('width', '100%')
+                    $('#background').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#background_2').css('height', '100vh')
+                    $('#background_2').css('transition', '0s')
+                    
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    
+                   $('#post_2_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('#left_side').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
+                    $('#parts').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    $('#post_1_B').css('display', 'none')
+                    $('#post_3_B').css('display', 'none')
+                    $('#post_4_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_2_B_link').css('width', '60%')
+                    
+                    $('#editorial_button').css('display', 'none')
+                    $('#about_button').css('display', 'none')
+                    $('#editorial_button_2').css('display', 'flex')
+                    $('#about_button_2').css('display', 'flex')
+                    $('#close_button').css('display', 'none')
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                     
+                },             
+ );
+    
+//para  abrir terceiro post B
+
+$('#post_3_B_link').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#right_side').css('marginLeft', '100%')
+                    $('#right_side').css('width', '0vw')
+                    $('#left_side').css('width', '100%')
+                    $('#left_side2').css('width', '100%')
+                    $('#background').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#background_2').css('height', '100vh')
+                    $('#background_2').css('transition', '0s')
+                    
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    
+                   $('#post_3_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('#left_side').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
+                    $('#parts').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    
+                    $('#post_1_B').css('display', 'none')
+                    $('#post_2_B').css('display', 'none')
+                    $('#post_4_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_3_B_link').css('width', '60%')
+                    
+                    $('#editorial_button').css('display', 'none')
+                    $('#about_button').css('display', 'none')
+                    $('#editorial_button_2').css('display', 'flex')
+                    $('#about_button_2').css('display', 'flex')
+                    $('#close_button').css('display', 'none')
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                     
+                },             
+ );
+   
+    
+//para  abrir quarto post B
+
+$('#post_4_B_link').click(
+                function(){
+                    $(window).scrollTop(0);
+                    $('#right_side').css('marginLeft', '100%')
+                    $('#right_side').css('width', '0vw')
+                    $('#left_side').css('width', '100%')
+                    $('#left_side2').css('width', '100%')
+                    $('#background').css('width', '100%')
+                    $('#background_2').css('width', '100%')
+                    $('#background_2').css('height', '100vh')
+                    $('#background_2').css('transition', '0s')
+                    
+                    
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    
+                    
+                   $('#post_4_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('#left_side').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
+                    $('#parts').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    $('#post_7').css('display', 'none')
+                    $('#post_8').css('display', 'none')
+                    
+                    
+                    $('#post_1_B').css('display', 'none')
+                    $('#post_2_B').css('display', 'none')
+                    $('#post_3_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_4_B_link').css('width', '60%')
+                    
+                    $('#editorial_button').css('display', 'none')
+                    $('#about_button').css('display', 'none')
+                    $('#editorial_button_2').css('display', 'flex')
+                    $('#about_button_2').css('display', 'flex')
+                    $('#close_button').css('display', 'none')
+                    
+                    $('.glow_1_1').css('color', 'black')
+                    $('.glow_1_1').css('textDecoration', 'none')
+                    $('.glow_1_1').css('-webkit-stroke-width', '0')
+                    $('.glow_1_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_1_1').css('-webkit-fill-color', 'black')
+                    $('.glow_1_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_1_1').css('cursor', 'default')
+
+                    $('.glow_2_1').css('color', 'black')
+                    $('.glow_2_1').css('textDecoration', 'none')
+                    $('.glow_2_1').css('-webkit-stroke-width', '0')
+                    $('.glow_2_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_2_1').css('-webkit-fill-color', 'black')
+                    $('.glow_2_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_2_1').css('cursor', 'default')
+                    
+                    $('.glow_3_1').css('color', 'black')
+                    $('.glow_3_1').css('textDecoration', 'none')
+                    $('.glow_3_1').css('-webkit-stroke-width', '0')
+                    $('.glow_3_1').css('-webkit-stroke-color', 'black')
+                    $('.glow_3_1').css('-webkit-fill-color', 'black')
+                    $('.glow_3_1').css('text-shadow', '0px 0px 0px black')
+                    $('.glow_3_1').css('cursor', 'default')
+                    
+                     
+                },             
+ );
+    
+    
+    
 /* para mudar para pt */
 $('#text_pt_link').click(
                 function(){
@@ -835,6 +1388,8 @@ $('#text_eng_link').click(
                     
             
                     $('#left_side').css('width', '100%')
+                    
+                    
                     
                     
                     
@@ -1308,6 +1863,47 @@ function topFunction() {
     
 );
 
+    $('.title_date_1_B').click(
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+);
+    $('.title_date_2_B').click(
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+);
+    $('.title_date_3_B').click(
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+);
+    $('.title_date_4_B').click(
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+);
+    $('#menu_back').click(
+    // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+);
+
     // scroll arrow desaparece
 
 $(document).ready(function() {
@@ -1353,14 +1949,14 @@ $('#close_bar').click(
  );
     
 //clicar no about us
-$('#hiatus').click(
-                function(){
-                    $('#about_us_logo').css('display', 'block')
-                    $('#hiatus_about_mobile').css('display', 'block')
-                }, 
-               
-
-);
+function* toggleAboutUs() {
+  while (true) {
+    yield () => $('#about_us_logo').css('display', 'block');
+    yield () => $('#about_us_logo').css('display', 'none');
+  }
+}
+const toggleAboutUsGen = toggleAboutUs();
+$('#hiatus').click(() => toggleAboutUsGen.next().value());
 
 //clicar no close about us
 $('#close_about').click(
@@ -1423,6 +2019,13 @@ $('.about_button_m').click(
                     
                     $('#post_1_link').css('width', '100%')
                     
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
+                    
                        
                 },             
  );
@@ -1444,6 +2047,12 @@ $('.about_button_m').click(
                     $('#menu_back').css('display', 'block')
                     
                     $('#post_2_link').css('width', '100%')
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
                     
                        
                 },             
@@ -1467,6 +2076,11 @@ $('.about_button_m').click(
                     
                     $('#post_3_link').css('width', '100%')
                     
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
                        
                 },             
  );
@@ -1489,6 +2103,13 @@ $('.about_button_m').click(
                     
                     $('#post_4_link').css('width', '100%')
                     
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
                        
                 },             
  );
@@ -1510,6 +2131,12 @@ $('.about_button_m').click(
                     $('#menu_back').css('display', 'block')
                     
                     $('#post_5_link').css('width', '100%')
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
                     
                        
                 },             
@@ -1534,12 +2161,20 @@ $('.about_button_m').click(
                     
                     $('#post_6_link').css('width', '100%')
                     
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#content_2').css('display', 'none')
+                    $('#filler').css('display', 'none')
+                    
                        
                 },             
  );
 
     
 $('#menu_back').click(
+                
+    
                 function(){
                     $(window).scrollTop(0);
                     $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 0)')
@@ -1579,11 +2214,38 @@ $('#menu_back').click(
                     $('#text_pt').css('display', 'none')
                     $('#text_eng').css('display', 'block')
                     
-                 
+                    //  issue 6 part 2
+                    
+                    $('#left_side').css('display', 'flex')
+                    $('#content_2').css('display', 'flex')
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 0)')
+                    $('#filler').css('display', 'block')
+                    $('#parts').css('display', 'flex')
+                    
+                    $('#post_1_B_content').css('display', 'none')
+                    $('#post_2_B_content').css('display', 'none')
+                    $('#post_3_B_content').css('display', 'none')
+                    $('#post_4_B_content').css('display', 'none')
+                    
+                    $('#post_1_B').css('display', 'block')
+                    $('#post_2_B').css('display', 'block')
+                    $('#post_3_B').css('display', 'block')
+                    $('#post_4_B').css('display', 'block')
+                    
+                    $('#post_1_B_link').css('width', '80%')
+                    $('#post_2_B_link').css('width', '80%')
+                    $('#post_3_B_link').css('width', '80%')
+                    $('#post_4_B_link').css('width', '80%')
+                    
+                    
                      
-                },             
+                },  
+    
+    
  );
     
+    
+
 /* para mudar para pt */
 $('#text_pt_link').click(
                 function(){
@@ -1894,6 +2556,143 @@ $('#menu_back_5').click(
                     $('#text_pt').css('display', 'none')
                     $('#text_eng').css('display', 'block')
                   },             
- );  
+ ); 
+//para issue 6 part 2   
+//post 1
+    $('.title_date_1_B').click(
+                function(){
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side').css('display', 'none')
+                    
+                    $('#post_1_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    
+                    $('#post_2_B').css('display', 'none')
+                    $('#post_3_B').css('display', 'none')
+                    $('#post_4_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_1_B_link').css('width', '100%')
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#parts').css('display', 'none')
+                    
+                    
+                
+                },             
+ );
+ //post 2   
+    $('.title_date_2_B').click(
+                function(){
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side').css('display', 'none')
+                    
+                    $('#post_2_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    
+                    $('#post_1_B').css('display', 'none')
+                    $('#post_3_B').css('display', 'none')
+                    $('#post_4_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_2_B_link').css('width', '100%')
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#parts').css('display', 'none')
+                    
+                
+                },  
+//post 3
+ );$('.title_date_3_B').click(
+                function(){
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side').css('display', 'none')
+                    
+                    $('#post_3_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    
+                    $('#post_1_B').css('display', 'none')
+                    $('#post_2_B').css('display', 'none')
+                    $('#post_4_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_3_B_link').css('width', '100%')
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#parts').css('display', 'none')
+                    
+                
+                },      
+        
+//post 4
+ );$('.title_date_4_B').click(
+                function(){
+                    $('#left_side').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#left_side').css('display', 'none')
+                    
+                    $('#post_4_B_content').css('display', 'block')
+                    $('#arrow').css('display', 'none')
+                    $('.menu_posts_guest').css('margin-top', '32vh')
+                    $('.menu_posts_guest4').css('margin-top', '32vh')
+                    $('#post_1').css('display', 'none')
+                    $('#post_2').css('display', 'none')
+                    $('#post_3').css('display', 'none')
+                    $('#post_4').css('display', 'none')
+                    $('#post_5').css('display', 'none')
+                    $('#post_6').css('display', 'none')
+                    
+                    $('#post_1_B').css('display', 'none')
+                    $('#post_2_B').css('display', 'none')
+                    $('#post_3_B').css('display', 'none')
+                    
+                    $('#menu_issues').css('display', 'none')
+                    $('#menu_back').css('display', 'block')
+                    
+                    $('#post_4_B_link').css('width', '100%')
+                    
+                    
+                    //   para issue 6
+                    $('#left_side2').css('backgroundColor', 'rgba(200, 200, 200, 1)')
+                    $('#parts').css('display', 'none')
+                    
+                
+                },             
+ );
     
 }    
