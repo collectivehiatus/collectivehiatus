@@ -27,7 +27,7 @@ function change(){
 		change1();
 	} else if (r4!=0){
 		change4();
-	} 
+	}
 }
 
 function change_b(){
@@ -237,6 +237,7 @@ function change4_b() {
 	}
 	return r4=i;																				//
 }
+  
 // CLOSE GALLERY //
 
 function closeGallery() {
