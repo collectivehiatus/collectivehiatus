@@ -622,22 +622,12 @@ $('.back').click(
                             $('.glow_3_8').css('text-shadow', '0px 0px 0px #000000');
                             $('.glow_3_8').css('cursor', 'pointer');
                         })
-                        
-                        
-                        function setPageBottom(id, percentagemDesktop, percentagemMobile) {{
-                document.getElementById(id).style.bottom =
-                    -(document.getElementById(id).offsetHeight
-                        - ((window.innerWidth <= 1023) ? percentagemMobile : percentagemDesktop)
-                        * window.innerHeight)+"px"
-
-               }
-            setPageBottom('content_2', 0.07, 0.22);
-            window.addEventListener("resize", () => setPageBottom('content_2', 0.07, 0.22));}
-                        
-                        
-                        
-                        
+                          
                     });
+                    
+                    
+                    
+                    
                     
                     
                 },             
